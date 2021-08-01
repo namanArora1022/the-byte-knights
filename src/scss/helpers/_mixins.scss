@@ -14,3 +14,9 @@
         background-color: $pink;
     }
 }
+
+@mixin hide-elements-mobile($size) {
+    @media only screen and (max-width: $size) {
+        display: none;
+    }
+}
