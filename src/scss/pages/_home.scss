@@ -36,6 +36,8 @@ $sq-side: 350px;
                     right: $sq-side;
                     background-color: $pink;
                 }
+
+                @include hide-elements-mobile(678px);
             }
 
             .circle {
@@ -67,6 +69,8 @@ $sq-side: 350px;
                 left: 0;
                 opacity: 0.2;
                 transform: translate(var(--x), var(--y));
+                
+                @include hide-elements-mobile(678px);
             }
         }
 
@@ -92,8 +96,7 @@ $sq-side: 350px;
             }
 
             p {
-                width: clamp(45ch, 50%, 75ch);
-                font-size: 1.5rem;
+                width: 60ch;
             }
 
             button {
@@ -193,4 +196,18 @@ $sq-side: 350px;
             font-size: 1.3rem;
         }
     }
+}
+
+@media only screen and (max-width: 678px){
+    .home main .content{
+        top: 40%;
+
+        h1{
+            font-size: 5rem;           
+        }
+
+        p{
+            width: 40ch;
+        }
+    }   
 }
