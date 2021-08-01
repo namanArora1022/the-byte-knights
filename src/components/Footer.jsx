@@ -42,7 +42,7 @@ function Footer() {
                                     <img src={info.svg} alt={info.alt} />
                                 </span>
                                 <span>
-                                    <a href={info.link}>{info.text}</a>
+                                    <a href={info.link} target="_blank" rel="noreferrer">{info.text}</a>
                                 </span>
                             </li>
                         ))}
