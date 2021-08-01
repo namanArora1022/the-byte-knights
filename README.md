@@ -12,7 +12,6 @@
 * Wave Animation on About page(https://www.youtube.com/watch?v=MMNEEdGa5eE)
 * Fix Contact page responsive design
 * ADD Copyright in footer and README.md
-* 404 page fix
 * Testing using jest
 * tilt.js on cards
 
