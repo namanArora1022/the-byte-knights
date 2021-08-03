@@ -1,5 +1,6 @@
 .about {
     overflow: hidden;
+
     main {
         overflow: hidden;
         padding: 50px 0;
@@ -50,15 +51,15 @@
         }
     }
 
-    section.timeline{
+    section.timeline {
         background-color: $light-grey-400;
         padding-bottom: 50px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        
-        h1{
+
+        h1 {
             margin: 20px 0;
             padding-bottom: 5px;
             font-size: 3rem;
@@ -67,32 +68,33 @@
         }
     }
 
-    section.our-team{
+    section.our-team {
         padding: 20px 0;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
 
-        h1{
+        h1 {
             font-size: 3rem;
             margin-bottom: 20px;
             @include underline-heading-border;
         }
 
-        p{
+        p {
             text-align: center;
 
-            span:nth-child(1){
+            span:nth-child(1) {
                 display: block;
-                @media only screen and (max-width: 431px){
-                    display: inline;    
+
+                @media only screen and (max-width: 431px) {
+                    display: inline;
                 }
             }
 
         }
 
-        .members{
+        .members {
             padding: 30px 0;
             padding-top: 60px;
             display: flex;
@@ -100,7 +102,7 @@
             justify-content: center;
             gap: 20px;
 
-            .member{
+            .member {
                 padding: 50px;
                 display: flex;
                 flex-direction: column;
@@ -109,28 +111,27 @@
                 border-radius: 40px;
                 transition: .7s all ease;
                 cursor: default;
-                
-                img{
+
+                img {
                     object-fit: cover;
                     height: 120px;
                     border-radius: 40px;
                 }
 
-                h3{
+                h3 {
                     margin: 10px 0;
                     font-size: 2rem;
                     font-weight: 400;
                 }
 
-                h5{
+                h5 {
                     font-size: 1.4rem;
                     font-weight: 400;
                     color: $pink;
                 }
 
-                &:hover{
-                    box-shadow: 16px 16px 30px #d6d6d6
-                                , -16px -16px 30px #fff;
+                &:hover {
+                    box-shadow: 16px 16px 30px #d6d6d6, -16px -16px 30px #fff;
                 }
             }
         }

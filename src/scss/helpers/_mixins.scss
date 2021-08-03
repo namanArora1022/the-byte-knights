@@ -24,4 +24,5 @@
 @mixin underline-heading-border($width: 3.5px , $color: $pink) {
     display: inline-block;
     border-bottom: $width solid $color;
+    font-weight: 500;
 }

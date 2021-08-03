@@ -145,9 +145,10 @@ $sq-side: 350px;
             align-items: center;
 
             h1 {
-                @include underline-heading;
                 font-size: 3rem;
+                font-weight: 400;
                 margin-bottom: 30px;
+                @include underline-heading-border;
 
                 &::before {
                     width: 300px;
