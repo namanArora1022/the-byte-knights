@@ -20,7 +20,22 @@ const EventsObj = {
     headline: 'Events',
     activeEventsHeading: 'Active Events',
     pastEventsHeading: 'Past Events',
-    activeEvents: [],
+    activeEvents: [
+        {
+            id: 1,
+            title: 'Social Debate',
+            img: Img1,
+            body: `Description of the competition:-
+        and had an opinion to ban these apps. There were two teams:Team A and
+        Team A had 3 participants and it was a
+        SOCIAL MEDIA team where they talked
+        about Instagram, Twitter and Facebook
+        ban and oppose the decision taken by
+        the government to ban these apps\n
+        Team B had 2 participants and it was a
+        government team who opposed team A .`
+        }
+    ],
     pastEvents: [
         {
             id: 1,

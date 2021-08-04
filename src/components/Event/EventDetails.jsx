@@ -5,12 +5,13 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 
 // Data
-import events from '../../data/events';
+import EventsObj from '../../data/events';
 
 const EventDetails = ({ match }) => {
 
     const id = match.params.id;
 
+    const events = EventsObj.activeEvents;
     const event = events[id - 1]
 
     useEffect(() => {
