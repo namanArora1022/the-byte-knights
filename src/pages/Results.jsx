@@ -6,6 +6,11 @@ import timeSvg from '../assets/time.svg';
 // Data
 import ResultsObj from '../data/results';
 
+// Animation
+import RubberBand from 'react-reveal/RubberBand';
+import Wobble from 'react-reveal/Wobble';
+import Fade from 'react-reveal/Fade';
+
 const Results = () => {
 
     const [day, setDay] = useState();
@@ -50,34 +55,44 @@ const Results = () => {
         <div className='results'>
             {result_delcared &&
                 <section className='result'>
-                    <h1>&lt;{ResultsObj.headline} /&gt;</h1>
-                    <div className="youtube-video">
-                        <iframe width="706" height="397" src="https://www.youtube.com/embed/PTu-QFp-9HA" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                    </div>
+                    <RubberBand>
+                        <h1>&lt;{ResultsObj.headline} /&gt;</h1>
+                    </RubberBand>
+                    <Wobble>
+                        <div className="youtube-video">
+                            <iframe width="706" height="397" src="https://www.youtube.com/embed/PTu-QFp-9HA" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                        </div>
+                    </Wobble>
                 </section>
             }
             {!result_delcared &&
                 <section className='comming-soon'>
-                    <h1>{ResultsObj.commingSoonHeading}</h1>
-                    <div className="countdown">
-                        <div>
-                            <h2>{day}</h2>
-                            <h3>Days</h3>
+                    <RubberBand>
+                        <h1>{ResultsObj.commingSoonHeading}</h1>
+                    </RubberBand>
+                    <Wobble>
+                        <div className="countdown">
+                            <div>
+                                <h2>{day}</h2>
+                                <h3>Days</h3>
+                            </div>
+                            <div>
+                                <h2>{hour}</h2>
+                                <h3>Hours</h3>
+                            </div>
+                            <div>
+                                <h2>{minute}</h2>
+                                <h3>Minutes</h3>
+                            </div>
+                            <div>
+                                <h2>{second}</h2>
+                                <h3>Seconds</h3>
+                            </div>
                         </div>
-                        <div>
-                            <h2>{hour}</h2>
-                            <h3>Hours</h3>
-                        </div>
-                        <div>
-                            <h2>{minute}</h2>
-                            <h3>Minutes</h3>
-                        </div>
-                        <div>
-                            <h2>{second}</h2>
-                            <h3>Seconds</h3>
-                        </div>
-                    </div>
-                    <img src={timeSvg} alt="comming soon" />
+                    </Wobble>
+                    <Fade up>
+                        <img src={timeSvg} alt="comming soon" />
+                    </Fade>
                 </section>
             }
         </div>

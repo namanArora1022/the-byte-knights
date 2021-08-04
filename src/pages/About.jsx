@@ -1,7 +1,8 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
 // Animation
-import Aos from 'aos';
+import Bounce from 'react-reveal/Bounce';
+import Fade from 'react-reveal/Fade';
 
 // Data
 import AboutObj from '../data/about';
@@ -22,27 +23,21 @@ function About() {
 
     const timelineElements = AboutObj.timeline.timelineElements;
 
-    useEffect(() => {
-        Aos.init({
-            duration: 700,
-        })
-    }, [])
-
     return (
         <div className='about'>
             <main>
-                <div className="content">
-                    <h1 data-aos="fade-right">&lt;{AboutObj.main.headline}/&gt;</h1>
-                    <p data-aos="fade-right" data-aos-delay="600">
-                        {AboutObj.main.para1}
-                    </p>
-                    <br />
-                    <p data-aos="fade-right" data-aos-delay="600">
-                        {AboutObj.main.para2Heading}
+                <Bounce left cascade>
+                    <div className="content">
+                        <h1>&lt;{AboutObj.main.headline}/&gt;</h1>
+                        <p>{AboutObj.main.para1}</p>
                         <br />
-                        {AboutObj.main.para2}
-                    </p>
-                </div>
+                        <p>
+                            {AboutObj.main.para2Heading}
+                            <br />
+                            {AboutObj.main.para2}
+                        </p>
+                    </div>
+                </Bounce>
             </main>
             <section className="timeline">
                 <h1>{AboutObj.timeline.headline}</h1>
@@ -69,18 +64,22 @@ function About() {
                 </VerticalTimeline>
             </section>
             <section className="our-team">
-                <h1>{AboutObj.ourTeam.headline}</h1>
-                <p>
-                    <span>{AboutObj.ourTeam.para.p1}</span>
-                    <span>{AboutObj.ourTeam.para.p2}</span>
-                </p>
+                <Bounce down>
+                    <h1>{AboutObj.ourTeam.headline}</h1>
+                    <p>
+                        <span>{AboutObj.ourTeam.para.p1}</span>
+                        <span>{AboutObj.ourTeam.para.p2}</span>
+                    </p>
+                </Bounce>
                 <div className="members">
                     {AboutObj.ourTeam.members.map(member => (
-                        <div className="member" key={member.id}>
-                            <img src={member.img} alt={member.name} />
-                            <h3>{member.name}</h3>
-                            <h5>{member.post}</h5>
-                        </div>
+                        <Fade left>
+                            <div className="member" key={member.id}>
+                                <img src={member.img} alt={member.name} />
+                                <h3>{member.name}</h3>
+                                <h5>{member.post}</h5>
+                            </div>
+                        </Fade>
                     ))}
                 </div>
             </section>

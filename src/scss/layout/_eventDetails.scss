@@ -19,17 +19,7 @@
         h1 {
             font-size: 2.7rem;
             margin-bottom: 30px;
-            position: relative;
-
-            &::before {
-                content: '';
-                position: absolute;
-                bottom: -5px;
-                left: 0;
-                width: 205px;
-                height: $sm-height;
-                background-color: $pink;
-            }
+            @include underline-heading-border(4px);
         }
 
         button {

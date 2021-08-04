@@ -1,24 +1,17 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 // Animation
 import Parallax from 'react-rellax';
-import Aos from 'aos';
-import 'aos/dist/aos.css';
+import LightSpeed from 'react-reveal/LightSpeed';
 
 // Data
 import HomeObj from '../data/home';
 import EventsObj from '../data/events'
 
 function Home() {
-    
-    const events = EventsObj.pastEvents;
 
-    useEffect(() => {
-        Aos.init({
-            duration: 1500
-        });
-    }, []);
+    const events = EventsObj.pastEvents;
 
     return (
         <div className='home'>
@@ -57,10 +50,12 @@ function Home() {
             <section className="lastest-event">
                 {events && events.length ? (
                     <div className='loaded'>
-                        <h1 data-aos="fade-up">&lt;{HomeObj.headline2}/&gt;</h1>
-                        <img data-aos="fade-right" data-aos-delay="600" src={events[events.length - 1].img} alt="" />
-                        <h3 data-aos="fade-left" data-aos-delay="200">{events[events.length - 1].title}</h3>
-                        <p data-aos="fade-right" data-aos-delay="900">{events[events.length - 1].body}</p>
+                        <LightSpeed left cascade>
+                            <h1>&lt;{HomeObj.headline2}/&gt;</h1>
+                            <img src={events[events.length - 1].img} alt="" />
+                            <h3>{events[events.length - 1].title}</h3>
+                            <p>{events[events.length - 1].body}</p>
+                        </LightSpeed>
                     </div>
                 ) : (
                     <div className='no-event'>
