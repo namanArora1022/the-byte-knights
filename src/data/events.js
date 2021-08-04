@@ -1,20 +1,8 @@
-/*
-
-! Example
-
-{
-    id: 1,
-    title: 'Made to Mingle',
-    img: Img3,
-    body: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam fuga et similique, doloribus aperiam, possimus autem minus optio perferendis quaerat provident? Aliquid dolor, repudiandae numquam doloremque a praesentium aliquam quas sapiente nam assumenda recusandae quibusdam nisi officia possimus nihil delectus quos fugiat, laudantium consequatur cumque sed architecto et? Labore, consectetur similique corrupti, soluta aliquid accusantium dolor ea et laborum debitis veritatis ad. Eligendi, veritatis consequuntur! Id rerum quos at veritatis eaque assumenda consequatur libero odio deleniti minima saepe nemo ad, dignissimos doloribus voluptatibus sed laudantium quas minus dolore ullam eius non? Qui nemo tempore eaque ratione aspernatur excepturi, aliquam, unde cupiditate ipsa rerum nesciunt eligendi harum alias quia fuga reiciendis consequuntur error odit eius.',
-    formLink: "https://forms.gle/963Qt8gYgsrZPQbE9"
-} */
-
-import Img1 from '../assets/events/1.jpg';
-import Img2 from '../assets/events/2.jpg';
-import Img3 from '../assets/events/3.jpg';
-import Img4 from '../assets/events/4.jpg';
-import Img5 from '../assets/events/5.jpg';
+import Social_Debate from '../assets/events/2021/Social Debate.jpg';
+import Lets_Code from '../assets/events/2021/Lets Code.jpg';
+import Made_To_Mingle from '../assets/events/2021/Made To Mingle.jpg';
+import Space_Monk from '../assets/events/2021/Space Monk.jpg';
+import Magic_Paint from '../assets/events/2021/Magic Paint.jpg';
 
 const EventsObj = {
     headline: 'Events',
@@ -25,7 +13,7 @@ const EventsObj = {
         {
             id: 1,
             title: 'Social Debate',
-            img: Img1,
+            img: Social_Debate,
             body: `Description of the competition:-
         and had an opinion to ban these apps. There were two teams:Team A and
         Team A had 3 participants and it was a
@@ -39,7 +27,7 @@ const EventsObj = {
         {
             id: 2,
             title: `Let's Code`,
-            img: Img2,
+            img: Lets_Code,
             body: `In this event, students have to
         make a website using HTML.
         2. Topics were given on the spot
@@ -57,7 +45,7 @@ const EventsObj = {
         {
             id: 3,
             title: `Made To Mingle`,
-            img: Img3,
+            img: Made_To_Mingle,
             body: `In this event, students have to
         make a power point presentation
         (ppt).
@@ -81,7 +69,7 @@ const EventsObj = {
         {
             id: 4,
             title: `Space Monk`,
-            img: Img4,
+            img: Space_Monk,
             body: `This event was a gaming competition in
         which the participants had to play
         "Among us
@@ -98,7 +86,7 @@ const EventsObj = {
         {
             id: 5,
             title: `Magic  Painting`,
-            img: Img5,
+            img: Magic_Paint,
             body: `In this event, the participants made
         a drawing using Ms Paint on their
         computer systems.
