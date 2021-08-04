@@ -73,8 +73,8 @@ function About() {
                 </Bounce>
                 <div className="members">
                     {AboutObj.ourTeam.members.map(member => (
-                        <Fade left>
-                            <div className="member" key={member.id}>
+                        <Fade left key={member.id}>
+                            <div className="member">
                                 <img src={member.img} alt={member.name} />
                                 <h3>{member.name}</h3>
                                 <h5>{member.post}</h5>
