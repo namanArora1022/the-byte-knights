@@ -46,7 +46,7 @@ const Events = () => {
                     <h2>{EventsObj.pastEventsHeading}</h2>
                 </Fade>
                 {pastEvents &&
-                    <Fade>
+                    <Fade up>
                         <div className="events-list" data-aos="fade-up" data-aos-delay="600">
                             {pastEvents.map(event => (
                                 <PastEvent event={event} key={event.id} />
