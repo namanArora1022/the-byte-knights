@@ -58,8 +58,11 @@ function Home() {
                         <div className="line"></div>
                     </div>
                 </header>
-                <LightSpeed left>
-                    <h1 className='heading'>{HomeObj.main.headline}</h1>
+                <LightSpeed left cascade>
+                    <div>
+                        <h1 className='heading'>{HomeObj.main.headline1}</h1>
+                        <h2 className='heading'>{HomeObj.main.headline2}</h2>
+                    </div>
                 </LightSpeed>
             </main>
             <section className='features'>

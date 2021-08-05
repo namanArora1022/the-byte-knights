@@ -6,7 +6,8 @@ import Design from '../assets/features/design.svg';
 
 const HomeObj = {
     main: { 
-        headline: `The Byte Knights`
+        headline1: 'The Byte Knights',
+        headline2: 'To Live to Learn'
     },
     features: {
         headline: 'What we do',
