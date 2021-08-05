@@ -6,8 +6,11 @@ const PastEvents = ({ event }) => {
             <img src={event.img} alt={event.title} />
             <h1>{event.title}</h1>
             <p>{event.body}</p>
+            <button>
+                <a href={event.reportLink} target="_blank" rel="noreferrer">Read More</a>
+            </button>
         </div>
     )
 }
 
-export default PastEvents
+export default PastEvents;

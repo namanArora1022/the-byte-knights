@@ -55,6 +55,12 @@
                     object-fit: contain;
                     height: 230px;
                 }
+
+                button{
+                    background-color: $pink;
+                    color: white;
+                    margin-top: 15px;
+                }
             }
         }
     }

@@ -24,7 +24,8 @@ const EventsObj = {
         ban and oppose the decision taken by
         the government to ban these apps\n
         Team B had 2 participants and it was a
-        government team who opposed team A .`
+        government team who opposed team A .`,
+        reportLink: 'https://drive.google.com/file/d/1DtvO1YUomksaxBfErDiB6IMtUGgvWekl/view?usp=sharing'
         },
         {
             id: 2,
@@ -42,7 +43,8 @@ const EventsObj = {
         ONLINE EDUCATION,
         All the participants have to make the
         frontend of the website on either of one
-        topic.`
+        topic.`,
+        reportLink: 'https://drive.google.com/file/d/1mgKklo3AXWlIZtR5IKjxJaCU0jYlTSum/view?usp=sharing'
         },
         {
             id: 3,
@@ -66,7 +68,8 @@ const EventsObj = {
         gave the topic as
         "Environment"
         All the participants have to make a ppt on
-        either of one topic.`
+        either of one topic.`,
+        reportLink: 'https://drive.google.com/file/d/119thjnL43iuX48bw7cdLi-47Awvd1_fs/view?usp=sharing'
         },
         {
             id: 4,
@@ -83,7 +86,8 @@ const EventsObj = {
         ● Some basic game criteria:- IMPOSTER-2
         PLAYERS-15
         MAP-SKELD
-        SERVER-ASIA`
+        SERVER-ASIA`,
+        reportLink: 'https://drive.google.com/file/d/1ObGkQVR5t2uM4bIbLfmieDwfQJFg4tbr/view?usp=sharing'
         },
         {
             id: 5,
@@ -97,7 +101,8 @@ const EventsObj = {
         ".
         - Topic was given on the spot to the
         participants and time was given to
-        them from 10 a.m. to 10:45 a.m.`
+        them from 10 a.m. to 10:45 a.m.`,
+        reportLink: 'https://drive.google.com/file/d/1jvqX6Hx92LRmBPUROsqUlB_h2W7lejTW/view?usp=sharing'
         },
         {
             id: 6,
@@ -105,7 +110,8 @@ const EventsObj = {
             img: Fathers_Day,
             body: `In this event, students made an E-card for their father and attached the best picture clicked by them of their father in the E-card. 
             The students made the E-Card from different applications on their devices. 
-            The students made the E-Card on the spot, time was given to them from 10 a.m. to 11:30 a.m.`
+            The students made the E-Card on the spot, time was given to them from 10 a.m. to 11:30 a.m.`,
+            reportLink: 'https://drive.google.com/file/d/1RoZeuAofzyZKTfaY7fdDGG2SntgR3NGh/view?usp=sharing'
         },
     ]
 }
