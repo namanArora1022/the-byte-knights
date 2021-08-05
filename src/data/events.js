@@ -1,8 +1,10 @@
+// 2021
 import Social_Debate from '../assets/events/2021/Social Debate.jpg';
 import Lets_Code from '../assets/events/2021/Lets Code.jpg';
 import Made_To_Mingle from '../assets/events/2021/Made To Mingle.jpg';
 import Space_Monk from '../assets/events/2021/Space Monk.jpg';
 import Magic_Paint from '../assets/events/2021/Magic Paint.jpg';
+import Fathers_Day from '../assets/events/2021/Fathers Day.jpg';
 
 const EventsObj = {
     headline: 'Events',
@@ -96,6 +98,14 @@ const EventsObj = {
         - Topic was given on the spot to the
         participants and time was given to
         them from 10 a.m. to 10:45 a.m.`
+        },
+        {
+            id: 6,
+            title: 'Fathers Day',
+            img: Fathers_Day,
+            body: `In this event, students made an E-card for their father and attached the best picture clicked by them of their father in the E-card. 
+            The students made the E-Card from different applications on their devices. 
+            The students made the E-Card on the spot, time was given to them from 10 a.m. to 11:30 a.m.`
         },
     ]
 }
