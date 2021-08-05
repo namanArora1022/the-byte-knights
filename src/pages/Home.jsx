@@ -6,6 +6,8 @@ import logo from '../assets/logo.png';
 
 // Animation
 import LightSpeed from 'react-reveal/LightSpeed';
+import RubberBand from 'react-reveal/RubberBand';
+import Fade from 'react-reveal/Fade';
 
 // Data
 import HomeObj from '../data/home';
@@ -66,14 +68,18 @@ function Home() {
                 </LightSpeed>
             </main>
             <section className='features'>
-                <h1>{HomeObj.features.headline}</h1>
+                <RubberBand>
+                    <h1>{HomeObj.features.headline}</h1>
+                </RubberBand>
                 <div className="features-list">
                     {HomeObj.features.list.map(feature => (
-                        <div className="feature" key={feature.id}>
-                            <img src={feature.img} alt={feature.name} />
-                            <h3>{feature.name}</h3>
-                            <p>{feature.description}</p>
-                        </div>
+                        <Fade left>
+                            <div className="feature" key={feature.id}>
+                                <img src={feature.img} alt={feature.name} />
+                                <h3>{feature.name}</h3>
+                                <p>{feature.description}</p>
+                            </div>
+                        </Fade>
                     ))}
                 </div>
             </section>
