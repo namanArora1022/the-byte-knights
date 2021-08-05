@@ -8,7 +8,7 @@
     * Photo gallery
 * SEO (meta tags stuff)
 * Wave Animation on About page(https://www.youtube.com/watch?v=MMNEEdGa5eE)
-* ADD Copyright in footer and README.md
+* ADD Copyright in footer and README.md(made by byte knights with love .....stuff)
 * Testing using jest
 * tilt.js on cards
 
