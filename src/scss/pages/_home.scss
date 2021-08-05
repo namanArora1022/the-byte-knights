@@ -37,6 +37,11 @@
         top: 0;
         left: 0;
         z-index: 3;
+
+        > a .logo{
+            margin-top: 10px;
+            height: 130px;
+        }
     }
 
     h1 {
@@ -48,6 +53,12 @@
 
         width: 100%;
         text-align: center;
+    }
+}
+
+@media only screen and (max-width: 566px) {
+    .home header.navbar > a .logo{
+        height: 90px;
     }
 }
 
