@@ -73,8 +73,8 @@ function Home() {
                 </RubberBand>
                 <div className="features-list">
                     {HomeObj.features.list.map(feature => (
-                        <Fade left>
-                            <div className="feature" key={feature.id}>
+                        <Fade left key={feature.id}>
+                            <div className="feature">
                                 <img src={feature.img} alt={feature.name} />
                                 <h3>{feature.name}</h3>
                                 <p>{feature.description}</p>
