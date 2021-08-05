@@ -59,9 +59,21 @@ function Home() {
                     </div>
                 </header>
                 <LightSpeed left>
-                    <h1>{HomeObj.headline1}</h1>
+                    <h1 className='heading'>{HomeObj.main.headline}</h1>
                 </LightSpeed>
             </main>
+            <section className='features'>
+                <h1>{HomeObj.features.headline}</h1>
+                <div className="features-list">
+                    {HomeObj.features.list.map(feature => (
+                        <div className="feature" key={feature.id}>
+                            <img src={feature.img} alt={feature.name} />
+                            <h3>{feature.name}</h3>
+                            <p>{feature.description}</p>
+                        </div>
+                    ))}
+                </div>
+            </section>
         </div>
     )
 }

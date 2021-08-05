@@ -44,7 +44,7 @@
         }
     }
 
-    h1 {
+    h1.heading {
         color: white;
         font-size: 12rem;
         font-family: Rancho;
@@ -53,6 +53,56 @@
 
         width: 100%;
         text-align: center;
+    }
+
+    section {
+        padding: 30px 60px;
+    }
+
+    section.features{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        h1{
+            font-size: 4rem;
+            margin-bottom: 30px;
+            @include underline-heading-border;
+        }
+
+        .features-list{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+
+            .feature{
+                height: 300px;
+                width: 300px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 20px;
+
+                img{
+                    object-fit: cover;
+                    background-color: $pink;
+                    padding: 5px;
+                    height: 50px;
+                    border-radius: 7px;
+                }
+
+                h3{
+                    margin: 10px 0;
+                }
+
+                p{
+                    text-align: center;
+                }
+            }
+        }
     }
 }
 
@@ -65,5 +115,9 @@
 @media only screen and (max-width: 397px) {
     .home main h1 {
         font-size: 10rem;
+    }
+
+    .home section.features h1{
+        font-size: 3rem;
     }
 }
