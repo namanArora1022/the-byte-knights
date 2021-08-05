@@ -1,4 +1,4 @@
-import President from '../assets/members/President.jpeg';
+// import President from '../assets/members/President.jpeg';
 import Vice_President from '../assets/members/Vice President.jpeg';
 import Secretary from '../assets/members/Secretary.jpeg';
 import Innovative_Head from '../assets/members/Innovative Head.jpeg';

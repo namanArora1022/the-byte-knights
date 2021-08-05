@@ -1,69 +1,67 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useRef } from 'react';
+import { Link } from "react-router-dom";
+
+// Images
+import logo from '../assets/logo.png';
 
 // Animation
-import Parallax from 'react-rellax';
 import LightSpeed from 'react-reveal/LightSpeed';
 
 // Data
 import HomeObj from '../data/home';
-import EventsObj from '../data/events'
 
 function Home() {
 
-    const events = EventsObj.pastEvents;
+    const [open, setOpen] = useState(false);
+
+    const navUl = useRef(null);
+
+    function toggleMenu() {
+        if (open) {
+            navUl.current.style.left = "-50%";
+        } else {
+            navUl.current.style.left = "50%";
+        }
+
+        setOpen(!open)
+    }
 
     return (
         <div className='home'>
-            <main>
-                <div className="art">
-                    <Parallax speed={-10}>
-                        <div className="rect"></div>
-                        <div className="rect"></div>
-                    </Parallax>
-                    <Parallax speed={3}>
-                        <div className="circle circle-1"></div>
-                        <div className="circle circle-2"></div>
-                    </Parallax>
-                    <div className='bubble'></div>
-                </div>
-                <div className='content'>
-                    <Parallax speed={7}>
-                        <h1>
-                            {HomeObj.headline1}
-                        </h1>
-                    </Parallax>
-                    <Parallax speed={5}>
-                        <p>
-                            {HomeObj.paragraph}
-                        </p>
-                    </Parallax>
-                    <Parallax speed={3}>
-                        <button>
-                            <Link to="/about">
-                                {HomeObj.btnText}
-                            </Link>
-                        </button>
-                    </Parallax>
-                </div>
+            <main className='landing'>
+                <header className="navbar">
+                    <a href="/">
+                        <img className="logo" src={logo} alt="logo" />
+                    </a>
+                    <div className="navbar-nav">
+                        <ul className="nav-ul" ref={navUl}>
+                            <li className="nav-item">
+                                <Link to="/" className="nav-link">Home</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link to="/about" className="nav-link">About</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link to="/events" className="nav-link">Events</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link to="/result" className="nav-link">Results</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link to="/contact" className="nav-link">Contact Us</Link>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="hamburger" onClick={toggleMenu}>
+                        <div className="line"></div>
+                        <div className="line"></div>
+                        <div className="line"></div>
+                    </div>
+                </header>
+                <LightSpeed left>
+                    <h1>{HomeObj.headline1}</h1>
+                </LightSpeed>
             </main>
-            <section className="lastest-event">
-                {events && events.length ? (
-                    <div className='loaded'>
-                        <LightSpeed left cascade>
-                            <h1>&lt;{HomeObj.headline2}/&gt;</h1>
-                            <img src={events[events.length - 1].img} alt="" />
-                            <h3>{events[events.length - 1].title}</h3>
-                            <p>{events[events.length - 1].body}</p>
-                        </LightSpeed>
-                    </div>
-                ) : (
-                    <div className='no-event'>
-                        <h1>{HomeObj.noEventText}</h1>
-                    </div>
-                )
-                }
-            </section>
         </div>
     )
 }

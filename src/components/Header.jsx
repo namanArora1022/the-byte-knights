@@ -1,13 +1,12 @@
 import React, { useState, useRef } from 'react'
-import { Link } from "react-router-dom";
+import { Link , useLocation } from "react-router-dom";
 
 // Images
 import logo from '../assets/logo.png';
 
 function Header() {
 
-    // ! I have removed sticky navbar idk why
-    // TODO 1) LIGHT THEME
+    const location = useLocation()
 
     const [open, setOpen] = useState(false);
 
@@ -24,6 +23,8 @@ function Header() {
     }
 
     return (
+        <>
+        { location.pathname !== '/' ?
         <header className="navbar">
             <a href="/">
                 <img className="logo" src={logo} alt="logo" />
@@ -52,7 +53,10 @@ function Header() {
                 <div className="line"></div>
                 <div className="line"></div>
             </div>
-        </header>
+        </header> 
+        : null
+        }
+        </>
     )
 }
 

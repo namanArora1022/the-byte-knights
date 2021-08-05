@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+
 .loader {
     position: absolute;
     top: 0;
@@ -17,7 +19,7 @@
         text-transform: uppercase;
 
         &.text1 {
-            font-size: 60px;
+            font-size: 12rem;
             font-weight: 700;
             letter-spacing: 8px;
             margin-bottom: 5px;
@@ -26,11 +28,6 @@
             font-family: Rancho;
             text-transform: capitalize;
             animation: text 1.5s 1 cubic-bezier(0.075, 0.82, 0.165, 1);
-        }
-
-        &.text2 {
-            font-size: 20px;
-            color: $pink;
         }
     }
 }
