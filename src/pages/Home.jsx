@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 // Images
 import logo from '../assets/logo.png';
+import { ReactComponent as Quote } from '../assets/quote.svg';
 
 // Animation
 import LightSpeed from 'react-reveal/LightSpeed';
@@ -78,6 +79,23 @@ function Home() {
                                 <img src={feature.img} alt={feature.name} />
                                 <h3>{feature.name}</h3>
                                 <p>{feature.description}</p>
+                            </div>
+                        </Fade>
+                    ))}
+                </div>
+            </section>
+            <section className='testimonials'>
+                <RubberBand>
+                    <h1>{HomeObj.testimonials.headline}</h1>
+                </RubberBand>
+                <div className="testimonials-list">
+                    {HomeObj.testimonials.list.map(testimonial => (
+                        <Fade left key={testimonial.id}>
+                            <div className="testimonial">
+                                <Quote />
+                                <p>{testimonial.text}</p>
+                                <h3>{testimonial.name}</h3>
+                                <h5>{testimonial.standard}</h5>
                             </div>
                         </Fade>
                     ))}
