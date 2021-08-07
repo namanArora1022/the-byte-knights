@@ -6,7 +6,6 @@
 * Pages
     * FAQ
     * Photo gallery
-* Wave Animation on About page(https://www.youtube.com/watch?v=MMNEEdGa5eE)
 * Testing using jest
 * tilt.js on cards
 
