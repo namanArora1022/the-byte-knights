@@ -32,19 +32,19 @@ function Header() {
             <div className="navbar-nav">
                 <ul className="nav-ul" ref={navUl}>
                     <li className="nav-item">
-                        <Link to="/" className="nav-link">Home</Link>
+                        <Link onClick={toggleMenu} to="/" className="nav-link">Home</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/about" className="nav-link">About</Link>
+                        <Link onClick={toggleMenu} to="/about" className="nav-link">About</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/events" className="nav-link">Events</Link>
+                        <Link onClick={toggleMenu} to="/events" className="nav-link">Events</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/result" className="nav-link">Results</Link>
+                        <Link onClick={toggleMenu} to="/result" className="nav-link">Results</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/contact" className="nav-link">Contact Us</Link>
+                        <Link onClick={toggleMenu} to="/contact" className="nav-link">Contact Us</Link>
                     </li>
                 </ul>
             </div>

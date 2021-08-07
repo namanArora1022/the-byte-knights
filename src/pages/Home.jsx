@@ -37,7 +37,7 @@ function Home() {
                     </a>
                     <div className="navbar-nav">
                         <ul className="nav-ul" ref={navUl}>
-                            <li className="nav-item">
+                            <li className="nav-item" onClick={toggleMenu}>
                                 <Link to="/" className="nav-link">Home</Link>
                             </li>
                             <li className="nav-item">
