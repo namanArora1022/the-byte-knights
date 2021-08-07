@@ -9,6 +9,7 @@
     >h1 {
         @include underline-heading-border(4px);
         font-size: 3.6rem;
+        margin-bottom: 40px;
 
         &::before {
             width: 190px;
