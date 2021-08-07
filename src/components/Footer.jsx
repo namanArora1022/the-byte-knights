@@ -4,6 +4,10 @@ import { Link } from 'react-router-dom';
 // Data
 import footerObj from '../data/footer';
 
+// Images
+import { ReactComponent as Copyright } from '../assets/copyright.svg'
+import { ReactComponent as Love } from '../assets/love.svg'
+
 function Footer() {
     return (
         <footer className='footer'>
@@ -48,6 +52,17 @@ function Footer() {
                         ))}
                     </ul>
                 </div>
+            </div>
+            <div className="copyright">
+                <h4>
+                    <Copyright/> { new Date().getFullYear() + ' '}
+                    The Byte Knights Club of Mira Model School
+                </h4>
+                <h4>
+                    Made with 
+                    <Love/>
+                    by The Byte Knights
+                </h4>
             </div>
         </footer >
     )

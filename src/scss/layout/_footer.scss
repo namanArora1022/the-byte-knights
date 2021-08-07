@@ -6,6 +6,7 @@ footer.footer {
     height: auto;
     width: 100%;
     color: white;
+    background-color: #111;
 
     .container-footer {
         display: flex;
@@ -13,7 +14,6 @@ footer.footer {
         flex-wrap: wrap;
         padding: 50px 100px;
         height: 100%;
-        background-color: #111;
 
         .sec {
             padding: 20px 0;
@@ -141,6 +141,21 @@ footer.footer {
                         cursor: pointer;
                     }
                 }
+            }
+        }
+    }
+
+    .copyright{
+        padding: 0 100px;
+        padding-bottom: 30px;
+        display: flex;
+        justify-content: space-between;
+
+        h4{
+            font-size: 1.3rem;
+
+            svg{
+                height: 14px;
             }
         }
     }
