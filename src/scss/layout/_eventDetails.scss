@@ -1,58 +1,127 @@
 .event-details {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 60px 100px;
 
-    .imgBox {
-        img {
-            height: 370px;
-            min-width: 370px;
-            object-fit: cover;
+    main {
+        padding: 60px 100px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+
+        .left {
+            img {
+                height: 370px;
+                min-width: 370px;
+                object-fit: cover;
+            }
+        }
+
+        .right {
+            margin-left: 30px;
+
+            h1 {
+                font-size: 2.7rem;
+                @include underline-heading-border(4px);
+            }
+
+            p {
+                padding: 30px 0;
+            }
+
+            .btns {
+                display: flex;
+                flex-direction: column;
+
+                button {
+                    margin: 10px 0;
+                    background-color: $pink;
+                    color: white;
+
+                    &:hover {
+                        background-color: #f00050;
+                    }
+                }
+            }
         }
     }
 
-    div {
-        padding-left: 30px;
-        max-width: 500px;
+    section {
+        padding: 60px 100px;
 
-        h1 {
-            font-size: 2.7rem;
-            margin-bottom: 30px;
-            @include underline-heading-border(4px);
+        h2 {
+            @include underline-heading-border;
+            font-size: 2.5rem;
+            font-weight: 400;
+            margin-bottom: 40px;
+        }
+    }
+
+    section.guidelines {
+        background-color: $light-grey-100;
+
+        p {
+            margin: 10px 0;
+        }
+    }
+
+    section.queries {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .left {
+            padding: 30px 20px;
+
+            h2{
+                margin-bottom: 10px;
+            }
+
+            p{
+                width: 45ch;
+                margin: 15px 0;
+            }
+
+            a{
+                @extend button;
+                background-color: $pink;
+                color: white;
+            }
         }
 
-        button {
-            margin-top: 30px;
-            background-color: $pink;
-            color: white;
+        .right {
+            width: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
-            &:hover {
-                background-color: #f00050;
+            svg {
+                height: 350px;
             }
         }
     }
 }
 
 @media only screen and (max-width: 1170px) {
-    .event-details {
+    .event-details main {
         flex-direction: column;
 
         >div {
             margin-top: 30px;
             padding-right: 0;
+            padding-left: 0;
         }
     }
 }
 
-@media only screen and (max-width: 692px) {
-    .event-details {
+@media only screen and (max-width: 631px) {
+
+    .event-details main,
+    .event-details section {
         padding: 40px 20px;
     }
 }
 
-@media only screen and (max-width: 604px) {
-    .event-details img {
+
+@media only screen and (max-width: 532px) {
+    .event-details main .left {
         display: none;
     }
 }

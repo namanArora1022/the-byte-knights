@@ -6,6 +6,50 @@ import Space_Monk from '../assets/events/2021/Space Monk.jpg';
 import Magic_Paint from '../assets/events/2021/Magic Paint.jpg';
 import Fathers_Day from '../assets/events/2021/Fathers Day.jpg';
 
+/* 
+! Active Event
+
+{
+id: 1,
+title: `Made To Mingle`,
+img: Made_To_Mingle,
+description: `In this event, students have to make a power point presentation (ppt).2. Topics were given on the spot to the participants and time was given to them from 10 a.m. to 11:30 a.m 3. Topics of the competition were:-● On the occasion of International Yoga Day, which was on 21st June, 2021 we gave the topic as "The benefits of Yoga" ● On the occasion of Environment day which was on 5th June, 2021 we gave the topic as "Environment" All the participants have to make a ppt on either of one topic.`,
+heads: [
+    {
+        img: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.ZgwEAx_I1bylIJ7GrYM9sAHaHa%26pid%3DApi&f=1',
+        name: 'Naman Arora',
+        phone: '+91 123456789'
+    },
+    {
+        img: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.ZgwEAx_I1bylIJ7GrYM9sAHaHa%26pid%3DApi&f=1',
+        name: 'Kashvi Arora',
+        phone: '+91 123456789'
+    },
+],
+guidelines: [
+    `Competition Guidelines Eligibility: Classes VI-XII`,
+    `Only 1 photograph per participant is allowed. All photographs should be submitted along with short captions (1-2 sentences).`,
+    `There is no limit to the number of participants from a school.`,
+    `Entries to be submitted through Google Forms. The last date to submit the photographs is Wednesday, 14 July 2021 by 5:00 PM.`,
+    `The participants must provide the following during the time of submission:`,
+    `Name of School`,
+    `Name of Participant`,
+    `Class studying in`,
+    `Email Id`,
+    `Instagram Handle (Optional)`,
+
+    `Plagiarism is strictly prohibited and will lead to disqualification.`,
+    `The participants must provide the original photograph along with the edited version. The edited version will be used as the official entry. The original photograph must be named ‘Original’ and the edited version must be named ‘Final’.`,
+    `Editing should be confined to colour and basic exposure. Adding external elements like rain, fog, sun, etc to the photograph during editing is strictly prohibited. The addition of such elements will lead to disqualification of the participant.`
+],
+formLink: 'https://forms.gle/963Qt8gYgsrZPQbE9',
+
+Todo: Channel spefic link is possible for each event
+
+discordLink: 'https://forms.gle/963Qt8gYgsrZPQbE9'
+}
+*/
+
 const EventsObj = {
     headline: 'Events',
     activeEventsHeading: 'Active Events',
@@ -25,7 +69,7 @@ const EventsObj = {
         the government to ban these apps\n
         Team B had 2 participants and it was a
         government team who opposed team A .`,
-        reportLink: 'https://drive.google.com/file/d/1DtvO1YUomksaxBfErDiB6IMtUGgvWekl/view?usp=sharing'
+            reportLink: 'https://drive.google.com/file/d/1DtvO1YUomksaxBfErDiB6IMtUGgvWekl/view?usp=sharing'
         },
         {
             id: 2,
@@ -44,7 +88,7 @@ const EventsObj = {
         All the participants have to make the
         frontend of the website on either of one
         topic.`,
-        reportLink: 'https://drive.google.com/file/d/1mgKklo3AXWlIZtR5IKjxJaCU0jYlTSum/view?usp=sharing'
+            reportLink: 'https://drive.google.com/file/d/1mgKklo3AXWlIZtR5IKjxJaCU0jYlTSum/view?usp=sharing'
         },
         {
             id: 3,
@@ -69,7 +113,7 @@ const EventsObj = {
         "Environment"
         All the participants have to make a ppt on
         either of one topic.`,
-        reportLink: 'https://drive.google.com/file/d/119thjnL43iuX48bw7cdLi-47Awvd1_fs/view?usp=sharing'
+            reportLink: 'https://drive.google.com/file/d/119thjnL43iuX48bw7cdLi-47Awvd1_fs/view?usp=sharing'
         },
         {
             id: 4,
@@ -87,7 +131,7 @@ const EventsObj = {
         PLAYERS-15
         MAP-SKELD
         SERVER-ASIA`,
-        reportLink: 'https://drive.google.com/file/d/1ObGkQVR5t2uM4bIbLfmieDwfQJFg4tbr/view?usp=sharing'
+            reportLink: 'https://drive.google.com/file/d/1ObGkQVR5t2uM4bIbLfmieDwfQJFg4tbr/view?usp=sharing'
         },
         {
             id: 5,
@@ -102,7 +146,7 @@ const EventsObj = {
         - Topic was given on the spot to the
         participants and time was given to
         them from 10 a.m. to 10:45 a.m.`,
-        reportLink: 'https://drive.google.com/file/d/1jvqX6Hx92LRmBPUROsqUlB_h2W7lejTW/view?usp=sharing'
+            reportLink: 'https://drive.google.com/file/d/1jvqX6Hx92LRmBPUROsqUlB_h2W7lejTW/view?usp=sharing'
         },
         {
             id: 6,
@@ -113,7 +157,16 @@ const EventsObj = {
             The students made the E-Card on the spot, time was given to them from 10 a.m. to 11:30 a.m.`,
             reportLink: 'https://drive.google.com/file/d/1RoZeuAofzyZKTfaY7fdDGG2SntgR3NGh/view?usp=sharing'
         },
-    ]
+    ],
+    discord: {
+        headline: `Join us on Discord`,
+        para1: `Common join us on discord , we will clear all of your queries regarding the events you are participating in.`,
+        para2: `All the best 👍🏻`,
+        btnText: 'Join now',
+        // Todo add a link
+        // https://discord.gg/f6vUxUKphU not this one
+        link: ''
+    }
 }
 
 export default EventsObj;
