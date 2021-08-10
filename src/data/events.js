@@ -165,7 +165,7 @@ const EventsObj = {
         btnText: 'Join now',
         // Todo add a link
         // https://discord.gg/f6vUxUKphU not this one
-        link: ''
+        link: 'https://discord.gg/f6vUxUKphU'
     }
 }
 
