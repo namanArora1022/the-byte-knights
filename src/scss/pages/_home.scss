@@ -7,10 +7,7 @@
     overflow: hidden;
 
     main {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+        @include flex(column);
 
         height: 100vh;
         width: 100%;
@@ -71,10 +68,7 @@
     }
 
     section.features {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+        @include flex(column);
 
         h1 {
             font-size: 4rem;
@@ -83,18 +77,12 @@
         }
 
         .features-list {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
+            @include flex(null , center , center , wrap);
 
             .feature {
                 height: 300px;
                 width: 300px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
+                @include flex(column);
                 padding: 20px;
 
                 img {
@@ -117,10 +105,7 @@
     }
 
     section.testimonials {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+        @include flex(column);
 
         h1 {
             font-size: 4rem;
@@ -129,10 +114,7 @@
         }
 
         .testimonials-list {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
+            @include flex(null , center , center , wrap);
 
             .testimonial {
                 background-color: $light-grey-100;

@@ -3,9 +3,7 @@
 
     main {
         padding: 60px 100px;
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
+        @include flex;
 
         .left {
             img {
@@ -28,8 +26,7 @@
             }
 
             .btns {
-                display: flex;
-                flex-direction: column;
+                @include flex(column , null , null);
 
                 button {
                     margin: 10px 0;
@@ -64,9 +61,7 @@
     }
 
     section.queries {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex;
 
         .left {
             padding: 30px 20px;
@@ -89,9 +84,7 @@
 
         .right {
             width: 400px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex;
 
             svg {
                 height: 350px;

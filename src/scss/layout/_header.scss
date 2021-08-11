@@ -51,10 +51,7 @@
         top: 70px;
         left: -50%;
         transform: translateX(-50%);
-        display: flex;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
+        @include flex(column , null , null);
         background-color: $grey;
         width: 100%;
         text-align: center;

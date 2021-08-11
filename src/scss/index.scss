@@ -1,12 +1,12 @@
+@import './base/colors';
+// mixins
 @import './helpers/variables';
+@import './helpers/mixins';
 
 // base
-@import './base/colors';
 @import './base/base';
 @import './base/typography';
 
-// mixins
-@import './helpers/mixins';
 
 // components styles
 @import './components/buttons';
@@ -48,9 +48,7 @@
 }
 
 .no-event {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    @include flex(null ,null ,flex-start);
 
     h1 {
         font-weight: 500;

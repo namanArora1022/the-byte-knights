@@ -1,10 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 .contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    @include flex(column);
     overflow: hidden;
 
     section {
@@ -28,10 +25,7 @@
         }
 
         .left {
-            display: flex;
-            justify-content: flex-start;
-            align-items: flex-start;
-            flex-direction: column;
+            @include flex(column , flex-start , flex-start);
 
             h1 {
                 font-size: 8rem;
@@ -61,10 +55,7 @@
 
         .right {
             width: 390px;
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            flex-direction: column;
+            @include flex(column , flex-start);
             z-index: 3;
 
             .icon {

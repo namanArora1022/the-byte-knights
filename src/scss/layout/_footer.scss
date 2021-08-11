@@ -9,9 +9,7 @@ footer.footer {
     background-color: #111;
 
     .container-footer {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
+        @include flex(null, space-between , null , wrap);
         padding: 50px 100px;
         height: 100%;
 
@@ -46,7 +44,7 @@ footer.footer {
 
             .sci {
                 margin-top: 20px;
-                display: flex;
+                @include flex(null , null ,null);
 
                 li {
                     list-style: none;
@@ -56,9 +54,7 @@ footer.footer {
                         height: 40px;
                         width: 40px;
                         background-color: #222;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
+                        @include flex;
                         margin-right: 10px;
                         text-decoration: none;
                         border-radius: 4px;
@@ -88,8 +84,7 @@ footer.footer {
 
             ul {
                 list-style: none;
-                display: flex;
-                flex-direction: column;
+                @include flex(column , null , null);
 
                 li {
                     margin-bottom: 10px;
@@ -107,9 +102,7 @@ footer.footer {
         }
 
         .contact {
-            display: flex;
-            justify-content: flex-start;
-            align-items: flex-start;
+            @include flex(null , flex-start , flex-start);
             width: 200px;
             margin-right: 0;
 
@@ -148,8 +141,7 @@ footer.footer {
     .copyright{
         padding: 0 100px;
         padding-bottom: 30px;
-        display: flex;
-        justify-content: space-between;
+        @include flex(null , space-between);
 
         h4{
             font-size: 1.3rem;
