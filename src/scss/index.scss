@@ -4,26 +4,29 @@
 @import './1-helpers/variables';
 @import './1-helpers/mixins';
 
-// 2 - BASE
-@import './2-base/base';
-@import './2-base/globals';
-@import './2-base/typography';
+// 2 - TOOLS
+@import './2-tools/normalize';
 
-// 3 - COMPONENTS
-@import './3-components/buttons';
-@import './3-components/inputs';
-@import './3-components/links';
+// 3 - BASE
+@import './3-base/base';
+@import './3-base/globals';
+@import './3-base/typography';
 
-// 4 - LAYOUTS
-@import './4-layout/header';
-@import './4-layout/footer';
-@import './4-layout/loader';
-@import './4-layout/eventDetails';
+// 4 - COMPONENTS
+@import './4-components/buttons';
+@import './4-components/inputs';
+@import './4-components/links';
 
-// 5 - PAGES
-@import './5-pages/home';
-@import './5-pages/about';
-@import './5-pages/events';
-@import './5-pages/results';
-@import './5-pages/contact';
-@import './5-pages/notFound';
+// 5 - LAYOUTS
+@import './5-layout/header';
+@import './5-layout/footer';
+@import './5-layout/loader';
+@import './5-layout/eventDetails';
+
+// 6 - PAGES
+@import './6-pages/home';
+@import './6-pages/about';
+@import './6-pages/events';
+@import './6-pages/results';
+@import './6-pages/contact';
+@import './6-pages/notFound';
