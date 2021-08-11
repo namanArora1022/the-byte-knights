@@ -1,10 +1,13 @@
-// import President from '../assets/members/President.jpeg';
+import President from '../assets/members/President.jpeg';
 import Vice_President from '../assets/members/Vice President.jpeg';
 import Secretary from '../assets/members/Secretary.jpeg';
 import Innovative_Head from '../assets/members/Innovative Head.jpeg';
 import Activity_Incharge from '../assets/members/Activity Incharge.jpeg';
 import ActivityCooridinator_1 from '../assets/members/Activity Cooridinator 1.jpeg';
 import ActivityCooridinator_2 from '../assets/members/Activity Cooridinator 2.jpeg';
+
+// unknown person image
+// 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.ZgwEAx_I1bylIJ7GrYM9sAHaHa%26pid%3DApi&f=1'
 
 const AboutObj = {
     main: {
@@ -64,7 +67,7 @@ const AboutObj = {
                 id: 1,
                 name: 'Naman Arora',
                 post: 'President',
-                img: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.ZgwEAx_I1bylIJ7GrYM9sAHaHa%26pid%3DApi&f=1'
+                img: President
             },
             {
                 id: 2,

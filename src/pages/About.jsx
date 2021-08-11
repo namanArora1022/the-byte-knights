@@ -75,7 +75,9 @@ function About() {
                     {AboutObj.ourTeam.members.map(member => (
                         <Fade left key={member.id}>
                             <div className="member">
-                                <img src={member.img} alt={member.name} />
+                                <figure>
+                                    <img src={member.img} alt={member.name} />
+                                </figure>
                                 <h3>{member.name}</h3>
                                 <h5>{member.post}</h5>
                             </div>

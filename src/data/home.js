@@ -16,7 +16,7 @@ const HomeObj = {
                 id: 1,
                 name: 'Coding',
                 img: Coding,
-                description: 'We have a keen intrest in coding , software developmemnt  , websites and apps in general'
+                description: 'We have a keen intrest in coding , software development , websites and apps in general'
             },
             {
                 id: 2,
