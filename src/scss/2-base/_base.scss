@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    &::selection{
+        color: white;
+        background-color: $pink;
+    }
+}
+
+:root {
+    font-size: 10px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+
+    #root {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+
+        .container {
+            position: absolute;
+            min-height: 100vh;
+            width: 100%;
+            @include flex(column, null , null);
+
+            section {
+                height: auto;
+                width: 100%;
+            }
+        }
+    }
+}
+
+body::-webkit-scrollbar {
+    background-color: $pink;
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: $yellow;
+    width: 10px;
+    border-radius: 15px;
+}
