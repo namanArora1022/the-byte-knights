@@ -6,7 +6,7 @@ const Event = ({ event }) => {
         <div className="event" key={event.id}>
             <Link to={`/events/${event.id}`}>
                 <img src={event.img} alt={event.title} />
-                <h1>{event.title}</h1>
+                <h3>{event.title}</h3>
                 <p>{event.description.slice(0, 250) + '... '}</p>
             </Link>
         </div>

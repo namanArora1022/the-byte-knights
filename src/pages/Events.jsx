@@ -26,7 +26,7 @@ const Events = () => {
                 {activeEvents && !activeEvents.length &&
                     <div className="no-event">
                         <Fade left>
-                            <h1 className='no-events'>No Events right now 😥</h1>
+                            <h3 className='no-events'>No Events right now 😥</h3>
                         </Fade>
                     </div>
                 }

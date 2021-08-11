@@ -37,7 +37,7 @@ function Footer() {
                         <li><a href="/contact">Contact</a></li>
                     </ul>
                 </div>
-                <div className="sec contact">
+                <div className="sec contact-info">
                     <h2>{footerObj.contactInfo.headline}</h2>
                     <ul className="info">
                         {footerObj.contactInfo.infos.map(info => (

@@ -16,7 +16,7 @@ function Contact() {
                 <Fade left>
                     <div className="left">
                         <h1>{contactObj.headline}</h1>
-                        <p><span>{contactObj.email.p1}</span>{contactObj.email.p2}</p>
+                        <h4><span>{contactObj.email.p1}</span>{contactObj.email.p2}</h4>
                         <img src={contactSvg} alt="" />
                     </div>
                 </Fade>

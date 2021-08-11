@@ -101,8 +101,8 @@ footer.footer {
             }
         }
 
-        .contact {
-            @include flex(null , flex-start , flex-start);
+        .contact-info {
+            @include flex(column , flex-start , flex-start);
             width: 200px;
             margin-right: 0;
 

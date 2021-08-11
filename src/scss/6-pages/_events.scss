@@ -40,8 +40,9 @@
 
             .event {
 
-                h1 {
+                h3 {
                     margin: 10px 0;
+                    font-size: 1.6rem;
                 }
 
                 p {
@@ -73,7 +74,7 @@
     .events .events-section .events-list .event {
         @include flex(column , null , null);
 
-        h1 {
+        h3 {
             text-align: center;
         }
 
