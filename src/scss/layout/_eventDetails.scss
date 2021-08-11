@@ -1,4 +1,5 @@
 .event-details {
+    overflow: hidden;
 
     main {
         padding: 60px 100px;
@@ -111,6 +112,12 @@
     }
 }
 
+@media only screen and (max-width: 800px) {
+    .event-details section.queries{
+        flex-direction: column;
+    }
+}
+
 @media only screen and (max-width: 631px) {
 
     .event-details main,
@@ -121,7 +128,16 @@
 
 
 @media only screen and (max-width: 532px) {
+    .event-details main{
+        padding: 20px;
+    }
     .event-details main .left {
         display: none;
+    }
+
+    .event-details section.queries{
+        .right svg{
+            height: 200px;
+        }
     }
 }
