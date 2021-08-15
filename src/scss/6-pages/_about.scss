@@ -104,10 +104,11 @@
     section.past-members{
         @include flex(column , center , center , wrap);
         padding: 20px 0;
+        padding-bottom: 50px;
 
         h1 {
             font-size: 3rem;
-            margin-bottom: 20px;
+            margin-bottom: 40px;
             @include underline-heading-border;
         }
 
