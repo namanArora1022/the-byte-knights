@@ -14,34 +14,7 @@ id: 1,
 title: `Made To Mingle`,
 img: Made_To_Mingle,
 description: `In this event, students have to make a power point presentation (ppt).2. Topics were given on the spot to the participants and time was given to them from 10 a.m. to 11:30 a.m 3. Topics of the competition were:-● On the occasion of International Yoga Day, which was on 21st June, 2021 we gave the topic as "The benefits of Yoga" ● On the occasion of Environment day which was on 5th June, 2021 we gave the topic as "Environment" All the participants have to make a ppt on either of one topic.`,
-heads: [
-    {
-        img: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.ZgwEAx_I1bylIJ7GrYM9sAHaHa%26pid%3DApi&f=1',
-        name: 'Naman Arora',
-        phone: '+91 123456789'
-    },
-    {
-        img: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.ZgwEAx_I1bylIJ7GrYM9sAHaHa%26pid%3DApi&f=1',
-        name: 'Kashvi Arora',
-        phone: '+91 123456789'
-    },
-],
-guidelines: [
-    `Competition Guidelines Eligibility: Classes VI-XII`,
-    `Only 1 photograph per participant is allowed. All photographs should be submitted along with short captions (1-2 sentences).`,
-    `There is no limit to the number of participants from a school.`,
-    `Entries to be submitted through Google Forms. The last date to submit the photographs is Wednesday, 14 July 2021 by 5:00 PM.`,
-    `The participants must provide the following during the time of submission:`,
-    `Name of School`,
-    `Name of Participant`,
-    `Class studying in`,
-    `Email Id`,
-    `Instagram Handle (Optional)`,
-
-    `Plagiarism is strictly prohibited and will lead to disqualification.`,
-    `The participants must provide the original photograph along with the edited version. The edited version will be used as the official entry. The original photograph must be named ‘Original’ and the edited version must be named ‘Final’.`,
-    `Editing should be confined to colour and basic exposure. Adding external elements like rain, fog, sun, etc to the photograph during editing is strictly prohibited. The addition of such elements will lead to disqualification of the participant.`
-],
+markdown: Made_To_Mingle_MarkDown,
 formLink: 'https://forms.gle/963Qt8gYgsrZPQbE9',
 }
 

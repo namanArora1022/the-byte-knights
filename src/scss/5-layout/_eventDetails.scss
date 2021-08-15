@@ -26,7 +26,7 @@
             }
 
             .btns {
-                @include flex(column , null , null);
+                @include flex(column, null, null);
 
                 button {
                     margin: 10px 0;
@@ -44,7 +44,7 @@
     section {
         padding: 60px 100px;
 
-        h2 {
+        >h2 {
             @include underline-heading-border;
             font-size: 2.5rem;
             font-weight: 400;
@@ -58,6 +58,31 @@
         p {
             margin: 10px 0;
         }
+
+        .guidelines-list {
+
+            h1,
+            h2,
+            h3 {
+                font-weight: 500;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.7rem;
+            }
+
+            h3 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 1.1rem;
+            }
+        }
     }
 
     section.queries {
@@ -66,16 +91,16 @@
         .left {
             padding: 30px 20px;
 
-            h2{
+            h2 {
                 margin-bottom: 10px;
             }
 
-            p{
+            p {
                 width: 45ch;
                 margin: 15px 0;
             }
 
-            a{
+            a {
                 @extend button;
                 background-color: $pink;
                 color: white;
@@ -106,7 +131,7 @@
 }
 
 @media only screen and (max-width: 800px) {
-    .event-details section.queries{
+    .event-details section.queries {
         flex-direction: column;
     }
 }
@@ -121,15 +146,16 @@
 
 
 @media only screen and (max-width: 532px) {
-    .event-details main{
+    .event-details main {
         padding: 20px;
     }
+
     .event-details main .left {
         display: none;
     }
 
-    .event-details section.queries{
-        .right svg{
+    .event-details section.queries {
+        .right svg {
             height: 200px;
         }
     }
