@@ -1,4 +1,7 @@
 .about {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
     overflow: hidden;
 
     main {
@@ -17,34 +20,6 @@
 
             p {
                 font-size: 1.4rem;
-            }
-        }
-    }
-
-    section.waves {
-        height: 100px;
-        width: 100%;
-        position: relative;
-        margin-top: 100px;
-
-        // TODO https://www.youtube.com/watch?v=MMNEEdGa5eE
-
-        .wave {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            background-repeat: no-repeat;
-            background-size: 100% 100px;
-            transform: scale(2.6);
-            animation: fadeIn 1.3s .5s ease-out 1 both;
-
-            &.wave1 {
-                background-image: url('../../assets/pink-wave.svg');
-            }
-
-            &.wave2 {
-                background-image: url('../../assets/yellow-wave.svg');
             }
         }
     }
@@ -125,15 +100,21 @@
             }
         }
     }
-}
 
-@keyframes fadeIn {
-    0% {
-        left: -120%;
-    }
+    section.waves {
+        position: relative;
+        height: auto;
+        width: 100%;
+        padding-top: 200px;
 
-    100% {
-        left: 0;
+        .wave{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 999999999999;
+        }
+
+        // TODO https://www.youtube.com/watch?v=MMNEEdGa5eE
     }
 }
 

@@ -15,6 +15,10 @@ import {
 } from 'react-vertical-timeline-component'
 import 'react-vertical-timeline-component/style.min.css';
 
+// Images
+import { ReactComponent as PinkWave } from '../assets/about/pink-wave.svg';
+import { ReactComponent as YellowWave } from '../assets/about/yellow-wave.svg';
+
 function About() {
 
     const workIconStyles = {
@@ -85,10 +89,9 @@ function About() {
                     ))}
                 </div>
             </section>
-            {/* // TODO */}
             {/* <section className="waves">
-                <div className='wave wave1'></div>
-                <div className='wave wave2'></div>
+                <PinkWave className='wave' />
+                <YellowWave className='wave' />
             </section> */}
         </div>
     )
