@@ -43,11 +43,9 @@ guidelines: [
     `Editing should be confined to colour and basic exposure. Adding external elements like rain, fog, sun, etc to the photograph during editing is strictly prohibited. The addition of such elements will lead to disqualification of the participant.`
 ],
 formLink: 'https://forms.gle/963Qt8gYgsrZPQbE9',
+}
 
 Todo: Channel spefic link is possible for each event
-
-discordLink: 'https://forms.gle/963Qt8gYgsrZPQbE9'
-}
 */
 
 const EventsObj = {

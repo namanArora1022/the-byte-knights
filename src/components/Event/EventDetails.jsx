@@ -57,18 +57,19 @@ const EventDetails = ({ match }) => {
                     ))}
                 </div>
             </section>
-            <a name='contact'></a>
-            <section className='queries'>
-                <div className="left">
-                    <h2>{EventsObj.discord.headline}</h2>
-                    <p>{EventsObj.discord.para1}</p>
-                    <p>{EventsObj.discord.para2}</p>
-                    <a href={EventsObj.discord.link} target='' rel="noreferrer">{EventsObj.discord.btnText}</a>
-                </div>
-                <div className="right">
-                    <Chatting />
-                </div>
-            </section>
+            <a name='contact'>
+                <section className='queries'>
+                    <div className="left">
+                        <h2>{EventsObj.discord.headline}</h2>
+                        <p>{EventsObj.discord.para1}</p>
+                        <p>{EventsObj.discord.para2}</p>
+                        <a href={EventsObj.discord.link} target='_blank' rel="noreferrer">{EventsObj.discord.btnText}</a>
+                    </div>
+                    <div className="right">
+                        <Chatting />
+                    </div>
+                </section>
+            </a>
         </div>
     )
 }
