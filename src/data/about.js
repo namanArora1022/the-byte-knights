@@ -106,6 +106,36 @@ const AboutObj = {
                 img: ActivityCooridinator_2
             },
         ]
+    },
+    pastMembers: {
+        headline: '<Past Members/>',
+        years: [
+            {
+                year: '2017-18',
+                President: 'Devansh Srivastav',
+                Vice_President: 'Jaydeep',
+            },
+            {
+                year: '2018-19',
+                President: 'Priyansh Bahuguna',
+                Vice_President: 'Shivansh Grover',
+            },
+            {
+                year: '2019-20',
+                President: 'Siddharth Pal',
+                Vice_President: 'Sarthak Kumar',
+            },
+            {
+                year: '2020-21',
+                President: 'Lakshit Bakshi',
+                Vice_President: 'Khushi Setia',
+            },
+            {
+                year: '2021-22',
+                President: 'Naman Arora',
+                Vice_President: 'Kashvi Arora',
+            }
+        ]
     }
 }
 

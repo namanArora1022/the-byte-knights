@@ -89,10 +89,33 @@ function About() {
                     ))}
                 </div>
             </section>
-            {/* <section className="waves">
+            <section className="past-members">
+                <Bounce down>
+                    <h1>{AboutObj.pastMembers.headline}</h1>
+                </Bounce >
+
+                <div className="years">
+                    {AboutObj.pastMembers.years.map(year => (
+                        <Fade left key={year.year}>
+                            <div className="year">
+                                <h2>{year.year}</h2>
+                                <div className="member">
+                                    <h3>{year.President}</h3>
+                                    <h4>President</h4>
+                                </div>
+                                <div className="member">
+                                    <h3>{year.Vice_President}</h3>
+                                    <h4>Vice President</h4>
+                                </div>
+                            </div>
+                        </Fade>
+                    ))}
+                </div>
+            </section>
+            <section className="waves">
                 <PinkWave className='wave' />
                 <YellowWave className='wave' />
-            </section> */}
+            </section>
         </div>
     )
 }

@@ -6,6 +6,8 @@ import PastEvent from '../components/Event/PastEvent';
 
 // Animation
 import Fade from 'react-reveal/Fade';
+import RubberBand from 'react-reveal/RubberBand';
+import Bounce from 'react-reveal/Bounce';
 
 // Data
 import EventsObj from '../data/events';
@@ -16,13 +18,13 @@ const Events = () => {
 
     return (
         <section className='events'>
-            <Fade down>
+            <RubberBand>
                 <h1>&lt;{EventsObj.headline}/&gt;</h1>
-            </Fade>
+            </RubberBand>
             <div className='active-events events-section'>
-                <Fade left>
+                <Bounce left>
                     <h2>{EventsObj.activeEventsHeading}</h2>
-                </Fade>
+                </Bounce>
                 {activeEvents && !activeEvents.length &&
                     <div className="no-event">
                         <Fade left>
@@ -31,31 +33,30 @@ const Events = () => {
                     </div>
                 }
                 {activeEvents &&
-                    <Fade up>
-                        <div className="events-list">
-                            {activeEvents.map(event => (
-                                <Event event={event} key={event.id} />
-                            ))}
-                        </div>
-                    </Fade>
+                    <div className="events-list">
+                        {activeEvents.map(event => (
+                            <Fade left key={event.id}>
+                                <Event event={event} />
+                            </Fade>
+                        ))}
+                    </div>
                 }
             </div>
 
             <div className='past-events events-section'>
-                <Fade left>
+                <Bounce left>
                     <h2>{EventsObj.pastEventsHeading}</h2>
-                </Fade>
+                </Bounce>
                 {pastEvents &&
-                    <Fade up>
-                        <div className="events-list">
-                            {pastEvents.map(event => (
-                                <PastEvent event={event} key={event.id} />
-                            ))}
-                        </div>
-                    </Fade>
+                    <div className="events-list">
+                        {pastEvents.map(event => (
+                            <Fade left key={event.id}>
+                                <PastEvent event={event} />
+                            </Fade>
+                        ))}
+                    </div>
                 }
             </div>
-
         </section>
     )
 }
