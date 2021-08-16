@@ -1,5 +1,7 @@
-import React , { useState , useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
+
+import NotFound from '../../pages/NotFound.jsx';
 
 // Animation
 import Fade from 'react-reveal/Fade';
@@ -20,67 +22,71 @@ const EventDetails = ({ match }) => {
     const [markdown, setMarkdown] = useState('');
 
     useEffect(() => {
-        fetch(event.markdown).then(res => res.text()).then(text => {
-            setMarkdown(text);
-        })
-    } , []);
+        if (event) {
+            fetch(event.markdown).then(res => res.text()).then(text => {
+                setMarkdown(text);
+            })
+        }
+    }, []);
 
     return (
         <div className='event-details'>
-            {event &&
-                <main>
-                    <div className="left">
-                        <Fade left>
-                            <img src={event.img} alt={event.title} />
-                        </Fade>
-                    </div>
-                    <div className='right'>
-                        <Fade up cascade>
-                            <h1>{event.title}</h1>
-                            <p>{event.description}</p>
-                            <div className="btns">
-                                <a href={event.formLink} target='_blank' rel="noreferrer">
-                                    <button>
-                                        Register Now
-                                    </button>
-                                </a>
-                                <a href='#contact' className='contact-btn'>
-                                    <button>
-                                        Contact Us for any Queries
-                                    </button>
-                                </a>
-                            </div>
-                        </Fade>
-                    </div>
-                </main>
-            }
-            <section className='guidelines'>
-                <Fade left>
-                    <h2>Competition Guidelines</h2>
-                </Fade>
-                <div className='guidelines-list'>
-                    <Fade left>
-                        <ReactMarkdown children={markdown}/>
-                    </Fade>
-                </div>
-            </section>
-            <a name='contact'>
-                <section className='queries'>
-                    <Fade left>
+            {event ?
+                <>
+                    <main>
                         <div className="left">
-                            <h2>{EventsObj.discord.headline}</h2>
-                            <p>{EventsObj.discord.para1}</p>
-                            <p>{EventsObj.discord.para2}</p>
-                            <a href={EventsObj.discord.link} target='_blank' rel="noreferrer">{EventsObj.discord.btnText}</a>
+                            <Fade left>
+                                <img src={event.img} alt={event.title} />
+                            </Fade>
                         </div>
-                    </Fade>
-                    <div className="right">
-                        <Fade right>
-                            <Chatting />
+                        <div className='right'>
+                            <Fade up cascade>
+                                <h1>{event.title}</h1>
+                                <p>{event.description}</p>
+                                <div className="btns">
+                                    <a href={event.formLink} target='_blank' rel="noreferrer">
+                                        <button>
+                                            Register Now
+                                        </button>
+                                    </a>
+                                    <a href='#contact' className='contact-btn'>
+                                        <button>
+                                            Contact Us for any Queries
+                                        </button>
+                                    </a>
+                                </div>
+                            </Fade>
+                        </div>
+                    </main>
+                    <section className='guidelines'>
+                        <Fade left>
+                            <h2>Competition Guidelines</h2>
                         </Fade>
-                    </div>
-                </section>
-            </a>
+                        <div className='guidelines-list'>
+                            <Fade left>
+                                {markdown && <ReactMarkdown children={markdown} />}
+                            </Fade>
+                        </div>
+                    </section>
+                    <a name='contact'>
+                        <section className='queries'>
+                            <Fade left>
+                                <div className="left">
+                                    <h2>{EventsObj.discord.headline}</h2>
+                                    <p>{EventsObj.discord.para1}</p>
+                                    <p>{EventsObj.discord.para2}</p>
+                                    <a href={EventsObj.discord.link} target='_blank' rel="noreferrer">{EventsObj.discord.btnText}</a>
+                                </div>
+                            </Fade>
+                            <div className="right">
+                                <Fade right>
+                                    <Chatting />
+                                </Fade>
+                            </div>
+                        </section>
+                    </a>
+                </> : <NotFound />
+            }
         </div>
     )
 }
