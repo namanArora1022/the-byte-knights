@@ -30,7 +30,7 @@ function About() {
     return (
         <div className='about'>
             <main>
-                <Bounce left cascade>
+                <Bounce left cascade delay={200}>
                     <div className="content">
                         <h1>&lt;{AboutObj.main.headline}/&gt;</h1>
                         <p>{AboutObj.main.para1}</p>
@@ -43,32 +43,34 @@ function About() {
                     </div>
                 </Bounce>
             </main>
-            <section className="timeline">
-                <h1>{AboutObj.timeline.headline}</h1>
-                <VerticalTimeline>
-                    {timelineElements.map(element => {
-                        return (
-                            <VerticalTimelineElement
-                                key={element.id}
-                                date={element.date}
-                                dateClassName='date'
-                                iconStyle={workIconStyles} // css
-                                icon={<WorkIcon />}
-                            >
+            <Fade up delay={500}>
+                <section className="timeline">
+                    <h1>{AboutObj.timeline.headline}</h1>
+                    <VerticalTimeline>
+                        {timelineElements.map(element => {
+                            return (
+                                <VerticalTimelineElement
+                                    key={element.id}
+                                    date={element.date}
+                                    dateClassName='date'
+                                    iconStyle={workIconStyles} // css
+                                    icon={<WorkIcon />}
+                                >
 
-                                <h3 className='vertical-timeline-element-title'>
-                                    {element.title}
-                                </h3>
+                                    <h3 className='vertical-timeline-element-title'>
+                                        {element.title}
+                                    </h3>
 
-                                <p className="description">{element.description}</p>
+                                    <p className="description">{element.description}</p>
 
-                            </VerticalTimelineElement>
-                        )
-                    })}
-                </VerticalTimeline>
-            </section>
+                                </VerticalTimelineElement>
+                            )
+                        })}
+                    </VerticalTimeline>
+                </section>
+            </Fade>
             <section className="our-team">
-                <Bounce down>
+                <Bounce down delay={200}>
                     <h1>{AboutObj.ourTeam.headline}</h1>
                     <p>
                         <span>{AboutObj.ourTeam.para.p1}</span>
@@ -77,7 +79,7 @@ function About() {
                 </Bounce>
                 <div className="members">
                     {AboutObj.ourTeam.members.map(member => (
-                        <Fade left key={member.id}>
+                        <Fade left key={member.id} delay={700}>
                             <div className="member">
                                 <figure>
                                     <img src={member.img} alt={member.name} />
@@ -90,13 +92,13 @@ function About() {
                 </div>
             </section>
             <section className="past-members">
-                <Bounce down>
+                <Bounce down delay={200}>
                     <h1>{AboutObj.pastMembers.headline}</h1>
                 </Bounce >
 
                 <div className="years">
                     {AboutObj.pastMembers.years.reverse().map(year => (
-                        <Fade left key={year.year}>
+                        <Fade left key={year.year} delay={700}>
                             <div className="year">
                                 <h2>{year.year}</h2>
                                 <div className="member">
@@ -113,8 +115,10 @@ function About() {
                 </div>
             </section>
             <section className="waves">
-                <PinkWave className='wave' />
-                <YellowWave className='wave' />
+                <Fade up cascade delay={300}>
+                    <PinkWave className='wave' />
+                    <YellowWave className='wave' />
+                </Fade>
             </section>
         </div>
     )

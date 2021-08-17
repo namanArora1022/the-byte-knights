@@ -40,7 +40,7 @@ const EventDetails = ({ match }) => {
                             </Fade>
                         </div>
                         <div className='right'>
-                            <Fade up cascade>
+                            <Fade up cascade delay={500}>
                                 <h1>{event.title}</h1>
                                 <p>{event.description}</p>
                                 <div className="btns">
@@ -70,7 +70,7 @@ const EventDetails = ({ match }) => {
                     </section>
                     <a name='contact'>
                         <section className='queries'>
-                            <Fade left>
+                            <Fade left delay={600}>
                                 <div className="left">
                                     <h2>{EventsObj.discord.headline}</h2>
                                     <p>{EventsObj.discord.para1}</p>
@@ -79,7 +79,7 @@ const EventDetails = ({ match }) => {
                                 </div>
                             </Fade>
                             <div className="right">
-                                <Fade right>
+                                <Fade right delay={600}>
                                     <Chatting />
                                 </Fade>
                             </div>

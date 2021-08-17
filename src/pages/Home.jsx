@@ -74,7 +74,7 @@ function Home() {
                 </RubberBand>
                 <div className="features-list">
                     {HomeObj.features.list.map(feature => (
-                        <Fade left key={feature.id}>
+                        <Fade left key={feature.id} delay={300}>
                             <div className="feature">
                                 <img src={feature.img} alt={feature.name} />
                                 <h3>{feature.name}</h3>
@@ -90,7 +90,7 @@ function Home() {
                 </RubberBand>
                 <div className="testimonials-list">
                     {HomeObj.testimonials.list.map(testimonial => (
-                        <Fade left key={testimonial.id}>
+                        <Fade left key={testimonial.id} delay={300}>
                             <div className="testimonial">
                                 <Quote />
                                 <p>{testimonial.text}</p>

@@ -18,16 +18,16 @@ const Events = () => {
 
     return (
         <section className='events'>
-            <RubberBand>
+            <RubberBand delay={300}>
                 <h1>&lt;{EventsObj.headline}/&gt;</h1>
             </RubberBand>
             <div className='active-events events-section'>
-                <Bounce left>
+                <Bounce left delay={600}>
                     <h2>{EventsObj.activeEventsHeading}</h2>
                 </Bounce>
                 {activeEvents && !activeEvents.length &&
                     <div className="no-event">
-                        <Fade left>
+                        <Fade left delay={1000}>
                             <h3 className='no-events'>No Events right now 😥</h3>
                         </Fade>
                     </div>
@@ -35,7 +35,7 @@ const Events = () => {
                 {activeEvents &&
                     <div className="events-list">
                         {activeEvents.map(event => (
-                            <Fade left key={event.id}>
+                            <Fade left key={event.id} delay={700}>
                                 <Event event={event} />
                             </Fade>
                         ))}
@@ -44,13 +44,13 @@ const Events = () => {
             </div>
 
             <div className='past-events events-section'>
-                <Bounce left>
+                <Bounce left delay={600}>
                     <h2>{EventsObj.pastEventsHeading}</h2>
                 </Bounce>
                 {pastEvents &&
                     <div className="events-list">
                         {pastEvents.map(event => (
-                            <Fade left key={event.id}>
+                            <Fade left key={event.id} delay={700}>
                                 <PastEvent event={event} />
                             </Fade>
                         ))}
