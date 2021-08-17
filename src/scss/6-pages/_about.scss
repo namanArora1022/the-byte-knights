@@ -12,7 +12,6 @@
         .content {
             @include flex(column, null, null);
             padding: 0 50px;
-            padding-bottom: 0;
 
             h1 {
                 @include underline-heading;
@@ -50,6 +49,7 @@
 
         p {
             text-align: center;
+            margin: 0 10px;
 
             span:nth-child(1) {
                 display: block;
@@ -120,6 +120,12 @@
                 padding: 30px 70px;
                 margin: 20px;
                 border-radius: 10px;
+                transition: .7s all ease;
+                cursor: default;
+
+                &:hover{
+                    box-shadow: 16px 16px 30px #d6d6d6, -16px -16px 30px #fff;
+                }
 
                 h2{
                     color: $pink;
@@ -140,7 +146,9 @@
                         font-size: 1.3rem;
                         font-weight: 500;
                     }
+
                 }
+
             }
         }
     }
@@ -159,6 +167,13 @@
         }
 
         // TODO https://www.youtube.com/watch?v=MMNEEdGa5eE
+    }
+}
+
+
+@media only screen and (max-width: 521px) {
+    .about main .content{
+        padding: 0 20px;
     }
 }
 
