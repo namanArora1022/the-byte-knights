@@ -95,7 +95,7 @@ function About() {
                 </Bounce >
 
                 <div className="years">
-                    {AboutObj.pastMembers.years.map(year => (
+                    {AboutObj.pastMembers.years.reverse().map(year => (
                         <Fade left key={year.year}>
                             <div className="year">
                                 <h2>{year.year}</h2>
