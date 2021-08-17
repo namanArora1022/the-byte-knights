@@ -27,7 +27,7 @@ const EventDetails = ({ match }) => {
                 setMarkdown(text);
             })
         }
-    }, []);
+    }, [event]);
 
     return (
         <div className='event-details'>
