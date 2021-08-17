@@ -4,7 +4,7 @@
     @include flex(column);
     overflow: hidden;
 
-    section {
+    main {
         position: relative;
         display: flex;
         height: 100vh;
@@ -51,6 +51,8 @@
                 object-fit: cover;
                 height: 370px;
                 margin-left: 15px;
+
+                @include hide-elements-mobile(973px);
             }
         }
 
@@ -76,10 +78,27 @@
             }
         }
     }
+
+    section.maps{
+        @include flex(column);
+        padding: 50px 20px;
+
+        h1{
+            @include underline-heading-border;
+            font-weight: 400;
+            font-size: 3.5rem;
+            margin-bottom: 50px;
+        }
+
+        iframe{
+            height: 450px;
+            width: 100%;
+        }
+    }
 }
 
 @media only screen and (max-width: 973px) {
-    .contact section {
+    .contact main {
         flex-direction: column;
         justify-content: flex-start;
         padding: 100px 40px;
@@ -119,15 +138,9 @@
         }
     }
 }
-@media only screen and (max-width: 824px) {
-    .contact section .left img{
-        display: none;
-    }
-}
 
 @media only screen and (max-width: 445px) {
-    .contact section {
-        padding: 100px 10px;
+    .contact main {
 
         .left,
         .right {
@@ -143,6 +156,14 @@
                 margin: 0 20px;
                 border-radius: 19px;
                 transition: .7s all ease;
+            }
+        }
+
+        .left{
+            padding: 20px;
+
+            h1{
+                font-size: 4rem;
             }
         }
     }
