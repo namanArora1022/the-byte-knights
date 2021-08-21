@@ -1,4 +1,4 @@
-.events {
+.Events {
     @include flex(column , flex-start);
     padding: 40px 70px;
     padding-bottom: 60px;
@@ -65,13 +65,13 @@
 }
 
 @media only screen and (max-width: 786px) {
-    .events {
+    .Events {
         padding: 40px 20px;
     }
 }
 
 @media only screen and (max-width: 420px) {
-    .events .events-section .events-list .event {
+    .Events .events-section .events-list .event {
         @include flex(column , null , null);
 
         h3 {

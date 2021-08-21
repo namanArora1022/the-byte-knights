@@ -52,7 +52,7 @@ const Results = () => {
     }, [hour, minute, second, day])
 
     return (
-        <div className='results'>
+        <div className='Results'>
             {result_delcared &&
                 <section className='result'>
                     <RubberBand>

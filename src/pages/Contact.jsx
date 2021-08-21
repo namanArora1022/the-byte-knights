@@ -11,7 +11,7 @@ import contactObj from '../data/contact';
 
 function Contact() {
     return (
-        <div className='contact'>
+        <div className='Contact'>
             <main>
                 <Fade left>
                     <div className="left">

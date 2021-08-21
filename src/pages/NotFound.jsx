@@ -6,7 +6,7 @@ import notFound from '../assets/not-found.svg';
 
 function NotFound() {
     return (
-        <div className="not-found">
+        <div className="NotFound">
             <h1>Not found</h1>
             <img src={notFound} alt="not-found" />
             <button>

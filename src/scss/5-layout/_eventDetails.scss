@@ -1,4 +1,4 @@
-.event-details {
+.EventDetails {
     overflow: hidden;
 
     main {
@@ -119,7 +119,7 @@
 }
 
 @media only screen and (max-width: 1170px) {
-    .event-details main {
+    .EventDetails main {
         flex-direction: column;
 
         >div {
@@ -131,30 +131,30 @@
 }
 
 @media only screen and (max-width: 800px) {
-    .event-details section.queries {
+    .EventDetails section.queries {
         flex-direction: column;
     }
 }
 
 @media only screen and (max-width: 631px) {
 
-    .event-details main,
-    .event-details section {
+    .EventDetails main,
+    .EventDetails section {
         padding: 40px 20px;
     }
 }
 
 
 @media only screen and (max-width: 532px) {
-    .event-details main {
+    .EventDetails main {
         padding: 20px;
     }
 
-    .event-details main .left {
+    .EventDetails main .left {
         display: none;
     }
 
-    .event-details section.queries {
+    .EventDetails section.queries {
         .right svg {
             height: 200px;
         }

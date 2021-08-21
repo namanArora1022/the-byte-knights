@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-.contact {
+.Contact {
     @include flex(column);
     overflow: hidden;
 
@@ -98,7 +98,7 @@
 }
 
 @media only screen and (max-width: 973px) {
-    .contact main {
+    .Contact main {
         flex-direction: column;
         justify-content: flex-start;
         padding: 100px 40px;
@@ -140,7 +140,7 @@
 }
 
 @media only screen and (max-width: 445px) {
-    .contact main {
+    .Contact main {
 
         .left,
         .right {

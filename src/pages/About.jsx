@@ -28,7 +28,7 @@ function About() {
     const timelineElements = AboutObj.timeline.timelineElements;
 
     return (
-        <div className='about'>
+        <div className='About'>
             <main>
                 <Bounce left cascade delay={200}>
                     <div className="content">

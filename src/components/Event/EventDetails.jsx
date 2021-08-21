@@ -30,7 +30,7 @@ const EventDetails = ({ match }) => {
     }, [event]);
 
     return (
-        <div className='event-details'>
+        <div className='EventDetails'>
             {event ?
                 <>
                     <main>

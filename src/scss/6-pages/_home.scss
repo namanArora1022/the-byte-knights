@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
 
-.home {
+.Home {
     position: relative;
     min-height: 100vh;
     width: 100%;
@@ -153,23 +153,23 @@
 }
 
 @media only screen and (max-width: 566px) {
-    .home header.navbar>a .logo {
+    .Home header.navbar>a .logo {
         height: 90px;
     }
 }
 
 @media only screen and (max-width: 397px) {
-    .home main h1 {
+    .Home main h1 {
         font-size: 10rem;
     }
 
-    .home section.features h1 {
+    .Home section.features h1 {
         font-size: 3rem;
     }
 }
 
 @media only screen and (max-width: 410px) {
-    .home section.testimonials .testimonials-list p {
+    .Home section.testimonials .testimonials-list p {
         width: 30ch;
     }
 }

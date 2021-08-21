@@ -30,7 +30,7 @@ function Home() {
     }
 
     return (
-        <div className='home'>
+        <div className='Home'>
             <main className='landing'>
                 <header className="navbar">
                     <a href="/">

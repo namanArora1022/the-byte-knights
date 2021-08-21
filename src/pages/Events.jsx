@@ -17,7 +17,7 @@ const Events = () => {
     const { activeEvents, pastEvents } = EventsObj;
 
     return (
-        <section className='events'>
+        <section className='Events'>
             <RubberBand delay={300}>
                 <h1>&lt;{EventsObj.headline}/&gt;</h1>
             </RubberBand>
