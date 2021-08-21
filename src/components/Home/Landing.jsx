@@ -12,7 +12,7 @@ import HomeObj from '../../data/home';
 
 const Landing = () => {
 
-    const { main } = HomeObj;
+    const main = HomeObj.main;
 
     const [open, setOpen] = useState(false);
 

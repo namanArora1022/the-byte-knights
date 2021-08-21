@@ -1,0 +1,45 @@
+section.past-members{
+    @include flex(column , center , center , wrap);
+    padding: 20px 0;
+    padding-bottom: 50px;
+
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 40px;
+        @include underline-heading-border;
+    }
+
+    .years{
+        @include flex(row , center , center , wrap);
+
+        .year{
+            background-color: $light-grey-100;
+            padding: 30px 70px;
+            margin: 20px;
+            border-radius: 10px;
+
+            h2{
+                color: $pink;
+                font-size: 2.3rem;
+                text-align: center;
+            }
+
+            .member{
+                @include flex(column , center , center , wrap);
+
+                h3{
+                    font-size: 1.6rem;
+                    margin: 10px;
+                    font-weight: 500;
+                }
+
+                h4{
+                    font-size: 1.3rem;
+                    font-weight: 500;
+                }
+
+            }
+
+        }
+    }
+}

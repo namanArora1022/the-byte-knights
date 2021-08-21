@@ -1,0 +1,13 @@
+section.our-story {
+    background-color: $light-grey-400;
+    padding-bottom: 50px;
+    @include flex(column);
+
+    h1 {
+        margin: 20px 0;
+        padding-bottom: 5px;
+        font-size: 3rem;
+        text-align: center;
+        @include underline-heading-border;
+    }
+}
