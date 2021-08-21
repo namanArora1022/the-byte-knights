@@ -1,46 +1,6 @@
 .EventDetails {
     overflow: hidden;
 
-    main {
-        padding: 60px 100px;
-        @include flex;
-
-        .left {
-            img {
-                height: 370px;
-                min-width: 370px;
-                object-fit: cover;
-            }
-        }
-
-        .right {
-            margin-left: 30px;
-
-            h1 {
-                font-size: 2.7rem;
-                @include underline-heading-border(4px);
-            }
-
-            p {
-                padding: 30px 0;
-            }
-
-            .btns {
-                @include flex(column, null, null);
-
-                button {
-                    margin: 10px 0;
-                    background-color: $pink;
-                    color: white;
-
-                    &:hover {
-                        background-color: #f00050;
-                    }
-                }
-            }
-        }
-    }
-
     section {
         padding: 60px 100px;
 
@@ -52,111 +12,14 @@
         }
     }
 
-    section.guidelines {
-        background-color: $light-grey-100;
-
-        p {
-            margin: 10px 0;
-        }
-
-        .guidelines-list {
-
-            h1,
-            h2,
-            h3 {
-                font-weight: 500;
-            }
-
-            h1 {
-                font-size: 2rem;
-            }
-
-            h2 {
-                font-size: 1.7rem;
-            }
-
-            h3 {
-                font-size: 1.5rem;
-            }
-
-            p {
-                font-size: 1.1rem;
-            }
-        }
-    }
-
-    section.queries {
-        @include flex;
-
-        .left {
-            padding: 30px 20px;
-
-            h2 {
-                margin-bottom: 10px;
-            }
-
-            p {
-                width: 45ch;
-                margin: 15px 0;
-            }
-
-            a {
-                @extend button;
-                background-color: $pink;
-                color: white;
-            }
-        }
-
-        .right {
-            width: 400px;
-            @include flex;
-
-            svg {
-                height: 350px;
-            }
-        }
-    }
-}
-
-@media only screen and (max-width: 1170px) {
-    .EventDetails main {
-        flex-direction: column;
-
-        >div {
-            margin-top: 30px;
-            padding-right: 0;
-            padding-left: 0;
-        }
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    .EventDetails section.queries {
-        flex-direction: column;
-    }
+    @import '../5-layout/eventDetails/landing';
+    @import '../5-layout/eventDetails/guidelines';
+    @import '../5-layout/eventDetails/queries';
 }
 
 @media only screen and (max-width: 631px) {
-
     .EventDetails main,
     .EventDetails section {
         padding: 40px 20px;
-    }
-}
-
-
-@media only screen and (max-width: 532px) {
-    .EventDetails main {
-        padding: 20px;
-    }
-
-    .EventDetails main .left {
-        display: none;
-    }
-
-    .EventDetails section.queries {
-        .right svg {
-            height: 200px;
-        }
     }
 }

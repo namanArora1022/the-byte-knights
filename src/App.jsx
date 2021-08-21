@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 // COMPONENTS
 import Header from './components/Header';
 import Footer from './components/Footer';
-import EventDetails from './components/Event/EventDetails';
 import Loader from './components/Loader';
 
 // PAGES
@@ -13,6 +12,7 @@ import Contact from './pages/Contact';
 import About from './pages/About';
 import NotFound from './pages/NotFound';
 import Events from './pages/Events';
+import EventDetails from './pages/EventDetails';
 import Results from './pages/Results';
 
 function App() {
