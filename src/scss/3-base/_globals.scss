@@ -24,3 +24,12 @@
         margin-bottom: 30px;
     }
 }
+
+.shadow {
+    transition: .7s all ease;
+    cursor: default;
+
+    &:hover {
+        box-shadow: 16px 16px 30px #d6d6d6, -16px -16px 30px #fff;
+    }
+}

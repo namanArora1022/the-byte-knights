@@ -80,7 +80,7 @@ function About() {
                 <div className="members">
                     {AboutObj.ourTeam.members.map(member => (
                         <Fade left key={member.id} delay={700}>
-                            <div className="member">
+                            <div className="member shadow">
                                 <figure>
                                     <img src={member.img} alt={member.name} />
                                 </figure>
@@ -99,7 +99,7 @@ function About() {
                 <div className="years">
                     {AboutObj.pastMembers.years.reverse().map(year => (
                         <Fade left key={year.year} delay={700}>
-                            <div className="year">
+                            <div className="year shadow">
                                 <h2>{year.year}</h2>
                                 <div className="member">
                                     <h3>{year.President}</h3>

@@ -91,7 +91,7 @@ function Home() {
                 <div className="testimonials-list">
                     {HomeObj.testimonials.list.map(testimonial => (
                         <Fade left key={testimonial.id} delay={300}>
-                            <div className="testimonial">
+                            <div className="testimonial shadow">
                                 <Quote />
                                 <p>{testimonial.text}</p>
                                 <h3>{testimonial.name}</h3>

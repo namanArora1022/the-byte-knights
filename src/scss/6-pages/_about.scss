@@ -69,12 +69,9 @@
 
             .member {
                 padding: 50px;
-
                 @include flex(column);
-
                 border-radius: 40px;
-                transition: .7s all ease;
-                cursor: default;
+                
 
                 img {
                     object-fit: cover;
@@ -92,10 +89,6 @@
                     font-size: 1.4rem;
                     font-weight: 400;
                     color: $pink;
-                }
-
-                &:hover {
-                    box-shadow: 16px 16px 30px #d6d6d6, -16px -16px 30px #fff;
                 }
             }
         }
@@ -120,12 +113,6 @@
                 padding: 30px 70px;
                 margin: 20px;
                 border-radius: 10px;
-                transition: .7s all ease;
-                cursor: default;
-
-                &:hover{
-                    box-shadow: 16px 16px 30px #d6d6d6, -16px -16px 30px #fff;
-                }
 
                 h2{
                     color: $pink;
@@ -172,19 +159,19 @@
 
 
 @media only screen and (max-width: 521px) {
-    .About main .content{
+    .about main .content{
         padding: 0 20px;
     }
 }
 
 // @media only screen and (max-width: 770px) {
-//     .About section .waves img {
+//     .about section .waves img {
 //         top: -50px;
 //     }
 // }
 
 // @media only screen and (max-width: 465px) {
-//     .About section .waves img {
+//     .about section .waves img {
 //         top: -20px;
 //     }
 // }
