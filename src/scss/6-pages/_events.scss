@@ -13,73 +13,11 @@
         }
     }
 
-    .events-section {
-        height: auto;
-        width: 100%;
-        @include flex(column , null , null);
-        text-align: left;
-
-        .no-events {
-            width: 100%;
-            font-size: 2.1rem;
-        }
-
-        h2 {
-            @include underline-heading;
-            font-size: 3rem;
-
-            &::before {
-                width: 190px;
-            }
-        }
-
-        .events-list {
-            margin: 30px 0;
-            @include flex(null , flex-start , null , wrap);
-            gap: 2rem;
-
-            .event {
-
-                h3 {
-                    margin: 10px 0;
-                    font-size: 1.6rem;
-                }
-
-                p {
-                    max-width: 330px;
-                }
-
-                img {
-                    object-fit: contain;
-                    height: 230px;
-                }
-
-                button{
-                    background-color: $pink;
-                    color: white;
-                    margin-top: 15px;
-                }
-            }
-        }
-    }
+    @import '../5-layout/events/section';
 }
 
 @media only screen and (max-width: 786px) {
     .Events {
         padding: 40px 20px;
-    }
-}
-
-@media only screen and (max-width: 420px) {
-    .Events .events-section .events-list .event {
-        @include flex(column , null , null);
-
-        h3 {
-            text-align: center;
-        }
-
-        img {
-            height: 200px;
-        }
     }
 }
