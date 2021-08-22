@@ -3,13 +3,7 @@ import React from 'react';
 // Animation
 import Fade from 'react-reveal/Fade';
 
-// Data
-import EventsObj from '../../data/events';
-
 const Landing = ({ event}) => {
-
-    const events = EventsObj.activeEvents;
-
     return (
         <main>
             <div className="left">
