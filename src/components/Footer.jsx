@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 import footerObj from '../data/footer';
 
 // Images
-import { ReactComponent as Copyright } from '../assets/copyright.svg'
-import { ReactComponent as Love } from '../assets/love.svg'
+import { ReactComponent as Copyright } from '../assets/footer/copyright.svg';
+import { ReactComponent as Love } from '../assets/footer/love.svg';
 
 function Footer() {
     return (

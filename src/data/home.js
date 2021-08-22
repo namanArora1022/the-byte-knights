@@ -1,8 +1,8 @@
-import Coding from '../assets/work.svg';
-import Video from '../assets/features/video.svg';
-import Photo from '../assets/features/photo.svg';
-import Quiz from '../assets/features/quiz.svg';
-import Design from '../assets/features/design.svg';
+import Coding from '../assets/home/work.svg';
+import Video from '../assets/home/features/video.svg';
+import Photo from '../assets/home/features/photo.svg';
+import Quiz from '../assets/home/features/quiz.svg';
+import Design from '../assets/home/features/design.svg';
 
 const HomeObj = {
     main: {

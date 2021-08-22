@@ -5,7 +5,7 @@ import RubberBand from 'react-reveal/RubberBand';
 import Fade from 'react-reveal/Fade';
 
 // Images
-import { ReactComponent as Quote } from '../../assets/quote.svg';
+import { ReactComponent as Quote } from '../../assets/home/quote.svg';
 
 // Data
 import HomeObj from '../../data/home';

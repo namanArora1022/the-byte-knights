@@ -7,7 +7,7 @@ import Fade from 'react-reveal/Fade';
 import AboutObj from '../../data/about';
 
 // Timeline component
-import { ReactComponent as WorkIcon } from '../../assets/work.svg';
+import { ReactComponent as WorkIcon } from '../../assets/home/work.svg';
 import {
     VerticalTimeline,
     VerticalTimelineElement
