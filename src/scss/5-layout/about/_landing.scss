@@ -1,0 +1,24 @@
+main {
+    overflow: hidden;
+    padding: 50px 0;
+    @include flex(column, null, null);
+
+    .content {
+        @include flex(column, null, null);
+        padding: 0 50px;
+
+        h1 {
+            @include underline-heading;
+        }
+
+        p {
+            font-size: 1.4rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 521px) {
+    .about main .content{
+        padding: 0 20px;
+    }
+}

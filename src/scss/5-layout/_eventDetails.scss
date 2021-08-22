@@ -1,0 +1,25 @@
+.EventDetails {
+    overflow: hidden;
+
+    section {
+        padding: 60px 100px;
+
+        >h2 {
+            @include underline-heading-border;
+            font-size: 2.5rem;
+            font-weight: 400;
+            margin-bottom: 40px;
+        }
+    }
+
+    @import '../5-layout/eventDetails/landing';
+    @import '../5-layout/eventDetails/guidelines';
+    @import '../5-layout/eventDetails/queries';
+}
+
+@media only screen and (max-width: 631px) {
+    .EventDetails main,
+    .EventDetails section {
+        padding: 40px 20px;
+    }
+}

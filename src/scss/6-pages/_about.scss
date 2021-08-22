@@ -1,0 +1,12 @@
+.About {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+
+    @import '../5-layout/about/landing';
+    @import '../5-layout/about/our-story';
+    @import '../5-layout/about/our-team';
+    @import '../5-layout/about/past-members';
+    @import '../5-layout/about/waves';
+}

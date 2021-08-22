@@ -1,13 +1,12 @@
 import React, { useState, useRef } from 'react'
-import { Link } from "react-router-dom";
+import { Link , useLocation } from "react-router-dom";
 
 // Images
 import logo from '../assets/logo.png';
 
 function Header() {
 
-    // ! I have removed sticky navbar idk why
-    // TODO 1) LIGHT THEME
+    const location = useLocation()
 
     const [open, setOpen] = useState(false);
 
@@ -24,6 +23,8 @@ function Header() {
     }
 
     return (
+        <>
+        { location.pathname !== '/' ?
         <header className="navbar">
             <a href="/">
                 <img className="logo" src={logo} alt="logo" />
@@ -31,19 +32,19 @@ function Header() {
             <div className="navbar-nav">
                 <ul className="nav-ul" ref={navUl}>
                     <li className="nav-item">
-                        <Link to="/" className="nav-link">Home</Link>
+                        <Link onClick={toggleMenu} to="/" className="nav-link">Home</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/about" className="nav-link">About</Link>
+                        <Link onClick={toggleMenu} to="/about" className="nav-link">About</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/events" className="nav-link">Events</Link>
+                        <Link onClick={toggleMenu} to="/events" className="nav-link">Events</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/result" className="nav-link">Results</Link>
+                        <Link onClick={toggleMenu} to="/result" className="nav-link">Results</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/contact" className="nav-link">Contact Us</Link>
+                        <Link onClick={toggleMenu} to="/contact" className="nav-link">Contact Us</Link>
                     </li>
                 </ul>
             </div>
@@ -52,7 +53,10 @@ function Header() {
                 <div className="line"></div>
                 <div className="line"></div>
             </div>
-        </header>
+        </header> 
+        : null
+        }
+        </>
     )
 }
 

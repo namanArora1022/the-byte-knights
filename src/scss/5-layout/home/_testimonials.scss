@@ -1,0 +1,46 @@
+section.testimonials {
+    @include flex(column);
+
+    h1 {
+        font-size: 4rem;
+        margin-bottom: 40px;
+        @include underline-heading-border;
+    }
+
+    .testimonials-list {
+        @include flex(null, center, center, wrap);
+
+        .testimonial {
+            background-color: $light-grey-100;
+            padding: 20px;
+            margin: 10px;
+
+            svg {
+                object-fit: cover;
+                height: 30px;
+                fill: $light-grey-600;
+            }
+
+            p {
+                width: 45ch;
+                margin: 10px 0;
+            }
+
+            h3 {
+                font-size: 1.4rem;
+                margin-bottom: 5px;
+            }
+
+            h5 {
+                font-size: 1.4rem;
+                color: $light-grey-900;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    .Home section.testimonials .testimonials-list p {
+        width: 30ch;
+    }
+}

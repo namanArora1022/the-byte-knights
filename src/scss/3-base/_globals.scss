@@ -1,0 +1,35 @@
+.error {
+    font-size: 1.7rem;
+    color: #d63031;
+    height: 70vh;
+}
+
+.pending {
+    font-size: 1.5rem;
+    height: 70vh;
+}
+
+.no-event {
+    @include flex(null, null, flex-start);
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-weight: 500;
+        font-size: 3rem;
+        position: relative;
+        margin-bottom: 30px;
+    }
+}
+
+.shadow {
+    transition: .7s all ease;
+    cursor: default;
+
+    &:hover {
+        box-shadow: 16px 16px 30px #d6d6d6, -16px -16px 30px #fff;
+    }
+}

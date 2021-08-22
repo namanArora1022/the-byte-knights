@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
+
+.Home {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+
+    
+    section {
+        padding: 30px 60px;
+    }
+
+    @import '../5-layout/home/landing';
+    @import '../5-layout/home/features';    
+    @import '../5-layout/home/testimonials';
+
+}

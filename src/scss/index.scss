@@ -1,61 +1,32 @@
-@import './helpers/variables';
+// This is the single file output by scss. Its is intended to ONLY @import other files.
 
-// base
-@import './base/colors';
-@import './base/base';
-@import './base/typography';
+// 1 - HELPERS
+@import './1-helpers/variables';
+@import './1-helpers/mixins';
 
-// mixins
-@import './helpers/mixins';
-
-// components styles
-@import './components/buttons';
-@import './components/links';
-@import './components/inputs';
+// 2 - TOOLS
 
 
-.container {
+// 3 - BASE
+@import './3-base/base';
+@import './3-base/globals';
+@import './3-base/typography';
 
-    section {
-        height: auto;
-        width: 100%;
-    }
+// 4 - COMPONENTS
+@import './4-components/buttons';
+@import './4-components/inputs';
+@import './4-components/links';
 
-    // pages
-    @import './pages/home';
-    @import './pages/contact';
-    @import './pages/about';
-    @import './pages/events';
-    @import './pages/notFound';
-    @import './pages/results';
+// 5 - LAYOUTS
+@import './5-layout/header';
+@import './5-layout/footer';
+@import './5-layout/loader';
+@import './5-layout/eventDetails';
 
-    // components
-    @import './layout/header';
-    @import './layout/footer';
-    @import './layout/eventDetails';
-    @import './layout/loader';
-}
-
-.error {
-    font-size: 1.7rem;
-    color: #d63031;
-    height: 70vh;
-}
-
-.pending {
-    font-size: 1.5rem;
-    height: 70vh;
-}
-
-.no-event {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-
-    h1 {
-        font-weight: 500;
-        font-size: 3rem;
-        position: relative;
-        margin-bottom: 30px;
-    }
-}
+// 6 - PAGES
+@import './6-pages/home';
+@import './6-pages/about';
+@import './6-pages/events';
+@import './6-pages/results';
+@import './6-pages/contact';
+@import './6-pages/notFound';

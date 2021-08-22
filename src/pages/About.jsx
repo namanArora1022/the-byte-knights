@@ -1,39 +1,18 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
-// Animation
-import Aos from 'aos';
-
-// Data
-import AboutObj from '../data/about';
+// Components
+import Landing from '../components/About/Landing';
+import OurTeam from '../components/About/OurTeam';
+import PastMembers from '../components/About/PastMembers';
+import Waves from '../components/About/Waves';
 
 function About() {
-
-    useEffect(() => {
-        Aos.init({
-            duration: 700,
-        })
-    }, [])
-
     return (
-        <div className='about'>
-            <section>
-                <div className="content">
-                    <h1 data-aos="fade-right">&lt;{AboutObj.headline}/&gt;</h1>
-                    <p data-aos="fade-right" data-aos-delay="600">
-                        {AboutObj.para1}
-                    </p>
-                    <br />
-                    <p data-aos="fade-right" data-aos-delay="600">
-                        {AboutObj.para2Heading}
-                        <br />
-                        {AboutObj.para2}
-                    </p>
-                </div>
-                <div className="waves">
-                    <div className='wave wave1'></div>
-                    <div className='wave wave2'></div>
-                </div>
-            </section>
+        <div className='About'>
+            <Landing />
+            <OurTeam />
+            <PastMembers />
+            <Waves />
         </div>
     )
 }

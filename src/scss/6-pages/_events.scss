@@ -1,0 +1,23 @@
+.Events {
+    @include flex(column , flex-start);
+    padding: 40px 70px;
+    padding-bottom: 60px;
+
+    >h1 {
+        @include underline-heading-border(4px);
+        font-size: 3.6rem;
+        margin-bottom: 40px;
+
+        &::before {
+            width: 190px;
+        }
+    }
+
+    @import '../5-layout/events/section';
+}
+
+@media only screen and (max-width: 786px) {
+    .Events {
+        padding: 40px 20px;
+    }
+}

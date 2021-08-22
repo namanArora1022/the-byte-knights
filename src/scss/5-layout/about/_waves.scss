@@ -1,0 +1,15 @@
+section.waves {
+    position: relative;
+    height: auto;
+    width: 100%;
+    padding-top: 200px;
+
+    .wave{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 999999999999;
+    }
+
+    // TODO https://www.youtube.com/watch?v=MMNEEdGa5eE
+}

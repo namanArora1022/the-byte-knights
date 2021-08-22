@@ -1,0 +1,43 @@
+section.features {
+    @include flex(column);
+
+    h1 {
+        font-size: 4rem;
+        margin-bottom: 30px;
+        @include underline-heading-border;
+    }
+
+    .features-list {
+        @include flex(null, center, center, wrap);
+
+        .feature {
+            height: 300px;
+            width: 300px;
+            @include flex(column);
+            padding: 20px;
+
+            img {
+                object-fit: cover;
+                background-color: $pink;
+                padding: 5px;
+                height: 50px;
+                border-radius: 7px;
+            }
+
+            h3 {
+                margin: 10px 0;
+            }
+
+            p {
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 397px) {
+
+    section.features h1 {
+        font-size: 3rem;
+    }
+}

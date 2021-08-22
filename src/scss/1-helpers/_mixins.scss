@@ -1,0 +1,36 @@
+@mixin underline-heading () {
+    font-size: 40px;
+    position: relative;
+    font-weight: 500;
+    margin-bottom: 30px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 230px;
+        height: $sm-height;
+        background-color: $pink;
+    }
+}
+
+@mixin hide-elements-mobile($size) {
+    @media only screen and (max-width: $size) {
+        display: none;
+    }
+}
+
+@mixin underline-heading-border($width: 3.5px , $color: $pink) {
+    display: inline-block;
+    border-bottom: $width solid $color;
+    font-weight: 500;
+}
+
+@mixin flex($direction: row , $jc: center , $ai: center , $wrap: nowrap) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+}

@@ -1,0 +1,29 @@
+.NotFound {
+    @include flex(column);
+    padding: 20px 50px;
+
+    h1 {
+        font-size: 4.5rem;
+        position: relative;
+        margin-bottom: 50px;
+
+        @include underline-heading-border(4px);
+    }
+
+    img {
+        object-fit: cover;
+        height: 300px;
+    }
+
+    button {
+        background-color: $pink;
+        color: white;
+        margin: 20px 0;
+    }
+}
+
+@media only screen and (max-width: 638px) {
+    .NotFound img {
+        height: 200px;
+    }
+}

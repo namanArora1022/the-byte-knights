@@ -1,10 +1,10 @@
-import fb from '../assets/fb.svg';
-import insta from '../assets/insta.svg';
-import yt from '../assets/yt.svg';
-import github from '../assets/github.svg';
+import fb from '../assets/social-media-icons/fb.svg';
+import insta from '../assets/social-media-icons/insta.svg';
+import yt from '../assets/social-media-icons/yt.svg';
+import github from '../assets/social-media-icons/github.svg';
 
-import emailSvg from '../assets/email.svg'
-import locationSvg from '../assets/location.svg'
+import emailSvg from '../assets/footer/email.svg'
+import locationSvg from '../assets/footer/location.svg'
 
 const footerObj = {
     about: {

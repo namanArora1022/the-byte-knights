@@ -1,20 +1,44 @@
-/*
+// 2021
+import Social_Debate from '../assets/events/2021/Social Debate.jpg';
+import Lets_Code from '../assets/events/2021/Lets Code.jpg';
+import Made_To_Mingle from '../assets/events/2021/Made To Mingle.jpg';
+import Space_Monk from '../assets/events/2021/Space Monk.jpg';
+import Magic_Paint from '../assets/events/2021/Magic Paint.jpg';
+import Fathers_Day from '../assets/events/2021/Fathers Day.jpg';
 
-! Example
+/* 
+! Active Event
 
 {
     id: 1,
-    title: 'Made to Mingle',
-    img: 'https://scontent.fdel46-1.fna.fbcdn.net/v/t1.6435-9/189593160_103928328587726_4233691751786710817_n.jpg?_nc_cat=105&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=J-l7lAkwUOwAX94LeY7&_nc_ht=scontent.fdel46-1.fna&oh=42b1c37d7504e7a01d5e35dee8d92f62&oe=60D76113',
-    body: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam fuga et similique, doloribus aperiam, possimus autem minus optio perferendis quaerat provident? Aliquid dolor, repudiandae numquam doloremque a praesentium aliquam quas sapiente nam assumenda recusandae quibusdam nisi officia possimus nihil delectus quos fugiat, laudantium consequatur cumque sed architecto et? Labore, consectetur similique corrupti, soluta aliquid accusantium dolor ea et laborum debitis veritatis ad. Eligendi, veritatis consequuntur! Id rerum quos at veritatis eaque assumenda consequatur libero odio deleniti minima saepe nemo ad, dignissimos doloribus voluptatibus sed laudantium quas minus dolore ullam eius non? Qui nemo tempore eaque ratione aspernatur excepturi, aliquam, unde cupiditate ipsa rerum nesciunt eligendi harum alias quia fuga reiciendis consequuntur error odit eius.',
-    formLink: "https://forms.gle/963Qt8gYgsrZPQbE9"
-} */
+    title: `Made To Mingle`,
+    img: Made_To_Mingle,
+    description: `In this event, students have to make a power point presentation (ppt).2. Topics were given on the spot to the participants and time was given to them from 10 a.m. to 11:30 a.m 3. Topics of the competition were:-● On the occasion of International Yoga Day, which was on 21st June, 2021 we gave the topic as "The benefits of Yoga" ● On the occasion of Environment day which was on 5th June, 2021 we gave the topic as "Environment" All the participants have to make a ppt on either of one topic.`,
+    markdown: Made_To_Mingle_MarkDown,
+    formLink: 'https://forms.gle/963Qt8gYgsrZPQbE9',
+}
 
-import Img1 from '../assets/events/1.jpg';
-import Img2 from '../assets/events/2.jpg';
-import Img3 from '../assets/events/3.jpg';
-import Img4 from '../assets/events/4.jpg';
-import Img5 from '../assets/events/5.jpg';
+Todo: Channel spefic link is possible for each event
+
+! Past Event
+
+{
+    id: 1,
+    title: 'Social Debate',
+    img: Social_Debate,
+    body: `Description of the competition:-
+    and had an opinion to ban these apps. There were two teams:Team A and
+    Team A had 3 participants and it was a
+    SOCIAL MEDIA team where they talked
+    about Instagram, Twitter and Facebook
+    ban and oppose the decision taken by
+    the government to ban these apps\n
+    Team B had 2 participants and it was a
+    government team who opposed team A .`,
+    reportLink: 'https://drive.google.com/file/d/1DtvO1YUomksaxBfErDiB6IMtUGgvWekl/view?usp=sharing'
+}
+
+*/
 
 const EventsObj = {
     headline: 'Events',
@@ -25,7 +49,7 @@ const EventsObj = {
         {
             id: 1,
             title: 'Social Debate',
-            img: Img1,
+            img: Social_Debate,
             body: `Description of the competition:-
         and had an opinion to ban these apps. There were two teams:Team A and
         Team A had 3 participants and it was a
@@ -34,12 +58,13 @@ const EventsObj = {
         ban and oppose the decision taken by
         the government to ban these apps\n
         Team B had 2 participants and it was a
-        government team who opposed team A .`
+        government team who opposed team A .`,
+            reportLink: 'https://drive.google.com/file/d/1DtvO1YUomksaxBfErDiB6IMtUGgvWekl/view?usp=sharing'
         },
         {
             id: 2,
             title: `Let's Code`,
-            img: Img2,
+            img: Lets_Code,
             body: `In this event, students have to
         make a website using HTML.
         2. Topics were given on the spot
@@ -52,12 +77,13 @@ const EventsObj = {
         ONLINE EDUCATION,
         All the participants have to make the
         frontend of the website on either of one
-        topic.`
+        topic.`,
+            reportLink: 'https://drive.google.com/file/d/1mgKklo3AXWlIZtR5IKjxJaCU0jYlTSum/view?usp=sharing'
         },
         {
             id: 3,
             title: `Made To Mingle`,
-            img: Img3,
+            img: Made_To_Mingle,
             body: `In this event, students have to
         make a power point presentation
         (ppt).
@@ -76,12 +102,13 @@ const EventsObj = {
         gave the topic as
         "Environment"
         All the participants have to make a ppt on
-        either of one topic.`
+        either of one topic.`,
+            reportLink: 'https://drive.google.com/file/d/119thjnL43iuX48bw7cdLi-47Awvd1_fs/view?usp=sharing'
         },
         {
             id: 4,
             title: `Space Monk`,
-            img: Img4,
+            img: Space_Monk,
             body: `This event was a gaming competition in
         which the participants had to play
         "Among us
@@ -93,12 +120,13 @@ const EventsObj = {
         ● Some basic game criteria:- IMPOSTER-2
         PLAYERS-15
         MAP-SKELD
-        SERVER-ASIA`
+        SERVER-ASIA`,
+            reportLink: 'https://drive.google.com/file/d/1ObGkQVR5t2uM4bIbLfmieDwfQJFg4tbr/view?usp=sharing'
         },
         {
             id: 5,
             title: `Magic  Painting`,
-            img: Img5,
+            img: Magic_Paint,
             body: `In this event, the participants made
         a drawing using Ms Paint on their
         computer systems.
@@ -107,9 +135,28 @@ const EventsObj = {
         ".
         - Topic was given on the spot to the
         participants and time was given to
-        them from 10 a.m. to 10:45 a.m.`
+        them from 10 a.m. to 10:45 a.m.`,
+            reportLink: 'https://drive.google.com/file/d/1jvqX6Hx92LRmBPUROsqUlB_h2W7lejTW/view?usp=sharing'
         },
-    ]
+        {
+            id: 6,
+            title: 'Fathers Day',
+            img: Fathers_Day,
+            body: `In this event, students made an E-card for their father and attached the best picture clicked by them of their father in the E-card. 
+            The students made the E-Card from different applications on their devices. 
+            The students made the E-Card on the spot, time was given to them from 10 a.m. to 11:30 a.m.`,
+            reportLink: 'https://drive.google.com/file/d/1RoZeuAofzyZKTfaY7fdDGG2SntgR3NGh/view?usp=sharing'
+        },
+    ],
+    discord: {
+        headline: `Join us on Discord`,
+        para1: `Common join us on discord , we will clear all of your queries regarding the events you are participating in.`,
+        para2: `All the best 👍🏻`,
+        btnText: 'Join now',
+        // Todo add a link
+        // https://discord.gg/f6vUxUKphU not this one
+        link: 'https://discord.gg/f6vUxUKphU'
+    }
 }
 
 export default EventsObj;
