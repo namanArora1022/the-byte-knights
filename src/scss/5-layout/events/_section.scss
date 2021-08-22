@@ -51,7 +51,7 @@
 
 
 @media only screen and (max-width: 420px) {
-    .Events .events-section .events-list .event {
+    .events-section .events-list .event {
         @include flex(column , null , null);
 
         h3 {
