@@ -11,53 +11,109 @@ main {
     background-position: center;
     height: 100vh;
     width: 100%;
-}
+    cursor: none;
 
-main::before {
-    content: '';
-    position: absolute;
-    height: 100vh;
-    width: 100%;
-    background-color: $black;
-    opacity: .4;
-}
-
-header.navbar {
-    background-color: transparent;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 3;
-
-    >a .logo {
-        margin-top: 10px;
-        height: 130px;
+    &::before {
+        content: '';
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        background-color: $black;
+        opacity: .4;
     }
-}
 
-h1.heading,
-h2.heading {
-    color: white;
-    font-family: Rancho;
-    letter-spacing: 5px;
-    text-shadow: 6px 6px 1px 2px $light-grey-500;
-
-    width: 100%;
-    text-align: center;
-}
-
-h1.heading {
-    font-size: 12rem;
-}
+    header {
+        background-color: transparent;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 3;
+        height: 70px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        padding: 0 50px;
 
 
-h2.heading {
-    font-size: 5rem;
-}
+        >a .logo {
+            margin-top: 10px;
+            height: 130px;
+            transform: translateY(50px);
 
-@media only screen and (max-width: 566px) {
-    header.navbar>a .logo {
-        height: 90px;
+            @media only screen and (max-width: 566px) {
+                & {
+                    height: 90px;
+                }
+            }
+        }
+
+        nav {
+            a {
+                margin: 0 10px;
+                cursor: none;
+                transition: all .7s ease;
+
+                &.link-grow {
+                    font-size: 2rem;
+                }
+            }
+        }
+
+        .hamburger {
+            display: none;
+        }
+    }
+
+    .cursor {
+        $side: 50px;
+        position: absolute;
+        height: $side;
+        width: $side;
+        border: 2px solid white;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+
+        &.hovered {
+            height: 100px;
+            width: 100px;
+            background-color: black;
+        }
+    }
+
+    .content {
+
+        h1.heading,
+        h2.heading {
+            color: white;
+            font-family: Rancho;
+            letter-spacing: 5px;
+            text-shadow: 6px 6px 1px 2px $light-grey-500;
+
+            width: 100%;
+            text-align: center;
+            transition: all .7s ease;
+
+        }
+
+        h1.heading {
+            font-size: 12rem;
+
+            &.heading-grow {
+                font-size: 14rem;
+            }
+        }
+
+
+        h2.heading {
+            font-size: 5rem;
+
+            &.heading-grow {
+                font-size: 7rem;
+            }
+        }
     }
 }
 

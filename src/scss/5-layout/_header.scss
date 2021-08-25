@@ -1,4 +1,4 @@
-.navbar {
+.Header {
     top: 0;
     left: 0;
     height: 70px;
@@ -46,7 +46,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .navbar .navbar-nav .nav-ul {
+    .Header.navbar-nav .nav-ul {
         position: absolute;
         top: 70px;
         left: -50%;
@@ -74,7 +74,7 @@
         margin: 5px 0;
     }
 
-    .navbar {
+    .Header{
         padding: 0 30px;
 
         .navbar-nav .nav-ul .nav-item:hover {

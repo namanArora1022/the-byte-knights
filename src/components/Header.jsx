@@ -25,7 +25,7 @@ function Header() {
     return (
         <>
         { location.pathname !== '/' ?
-        <header className="navbar">
+        <header className="Header">
             <a href="/">
                 <img className="logo" src={logo} alt="logo" />
             </a>
