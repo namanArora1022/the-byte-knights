@@ -1,8 +1,7 @@
 import React from 'react'
 
 // Animation
-import RubberBand from 'react-reveal/RubberBand';
-import Fade from 'react-reveal/Fade';
+import { AttentionSeeker , Fade } from 'react-awesome-reveal';
 
 // Data
 import HomeObj from '../../data/home';
@@ -13,12 +12,12 @@ const Features = () => {
 
     return (
         <section className='features'>
-            <RubberBand>
+            <AttentionSeeker effect='rubberBand' triggerOnce>
                 <h1>{features.headline}</h1>
-            </RubberBand>
+            </AttentionSeeker>
             <div className="features-list">
                 {features.list.map(feature => (
-                    <Fade left key={feature.id} delay={300}>
+                    <Fade direction='left' key={feature.id} delay={300} triggerOnce>
                         <div className="feature">
                             <img src={feature.img} alt={feature.name} />
                             <h3>{feature.name}</h3>

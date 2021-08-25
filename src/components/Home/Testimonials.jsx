@@ -1,8 +1,8 @@
 import React from 'react'
 
 // Animation
-import RubberBand from 'react-reveal/RubberBand';
-import Fade from 'react-reveal/Fade';
+import { AttentionSeeker , Fade } from 'react-awesome-reveal';
+
 
 // Images
 import { ReactComponent as Quote } from '../../assets/home/quote.svg';
@@ -16,12 +16,12 @@ const Testimonials = () => {
 
     return (
         <section className='testimonials'>
-            <RubberBand>
+            <AttentionSeeker effect='rubberBand' triggerOnce>
                 <h1>{testimonials.headline}</h1>
-            </RubberBand>
+            </AttentionSeeker>
             <div className="testimonials-list">
                 {testimonials.list.map(testimonial => (
-                    <Fade left key={testimonial.id} delay={300}>
+                    <Fade direction='left' key={testimonial.id} delay={300} triggerOnce>
                         <div className="testimonial shadow">
                             <Quote />
                             <p>{testimonial.text}</p>

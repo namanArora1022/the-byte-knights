@@ -1,18 +1,18 @@
 import React from 'react';
 
 // Animation
-import Fade from 'react-reveal/Fade';
+import { Fade } from 'react-awesome-reveal';
 
-const Landing = ({ event}) => {
+const Landing = ({ event }) => {
     return (
         <main>
             <div className="left">
-                <Fade left>
+                <Fade direction='left' triggerOnce>
                     <img src={event.img} alt={event.title} />
                 </Fade>
             </div>
             <div className='right'>
-                <Fade up cascade delay={500}>
+                <Fade direction='up' cascade delay={500} triggerOnce>
                     <h1>{event.title}</h1>
                     <p>{event.description}</p>
                     <div className="btns">

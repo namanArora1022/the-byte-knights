@@ -4,8 +4,7 @@ import React from 'react';
 import PastEvent from './PastEvent';
 
 // Animation
-import Fade from 'react-reveal/Fade';
-import Bounce from 'react-reveal/Bounce';
+import { Fade , Bounce } from "react-awesome-reveal";
 
 // Data
 import EventsObj from '../../data/events';
@@ -16,13 +15,13 @@ const PastEvents = () => {
 
     return (
         <div className='past-events events-section'>
-            <Bounce left delay={600}>
+            <Bounce direction='left' delay={600} triggerOnce>
                 <h2>{EventsObj.pastEventsHeading}</h2>
             </Bounce>
             {pastEvents &&
                 <div className="events-list">
                     {pastEvents.map(event => (
-                        <Fade left key={event.id} delay={700}>
+                        <Fade direction='left' key={event.id} delay={700} triggerOnce>
                             <PastEvent event={event} />
                         </Fade>
                     ))}

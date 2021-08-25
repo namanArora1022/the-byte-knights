@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Animation
-import RubberBand from 'react-reveal/RubberBand';
+import { AttentionSeeker } from 'react-awesome-reveal';
 
 // Data
 import EventsObj from '../data/events';
@@ -14,9 +14,9 @@ const Events = () => {
 
     return (
         <section className='Events'>
-            <RubberBand delay={300}>
-                <h1>&lt;{EventsObj.headline}/&gt;</h1>
-            </RubberBand>
+            <AttentionSeeker delay={300} effect='rubberBand' triggerOnce>
+                <h1 className='heading'>&lt;{EventsObj.headline}/&gt;</h1>
+            </AttentionSeeker>
 
             <ActiveEvents/>
             <PastEvents/>            

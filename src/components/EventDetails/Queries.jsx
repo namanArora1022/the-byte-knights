@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Animation
-import Fade from 'react-reveal/Fade';
+import { Fade } from 'react-awesome-reveal';
 
 // Data
 import EventsObj from '../../data/events';
@@ -16,7 +16,7 @@ const Contact = () => {
     return (
         <a name='queries'>
             <section className='queries'>
-                <Fade left delay={600}>
+                <Fade direction='left' delay={600}>
                     <div className="left">
                         <h2>{discord.headline}</h2>
                         <p>{discord.para1}</p>
@@ -25,7 +25,7 @@ const Contact = () => {
                     </div>
                 </Fade>
                 <div className="right">
-                    <Fade right delay={600}>
+                    <Fade direction='right' delay={600}>
                         <Chatting />
                     </Fade>
                 </div>

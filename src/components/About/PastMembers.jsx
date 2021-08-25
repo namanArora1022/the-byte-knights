@@ -1,8 +1,7 @@
 import React from 'react';
 
 // Animation
-import Bounce from 'react-reveal/Bounce';
-import Fade from 'react-reveal/Fade';
+import { Bounce , Fade } from "react-awesome-reveal";
 
 // Data
 import AboutObj from '../../data/about';
@@ -13,13 +12,13 @@ const PastMembers = () => {
 
     return (
         <section className="past-members">
-            <Bounce down delay={200}>
+            <Bounce direction='down' delay={200} triggerOnce>
                 <h1>{pastMembers.headline}</h1>
             </Bounce >
 
             <div className="years">
                 {pastMembers.years.reverse().map(year => (
-                    <Fade left key={year.year} delay={700}>
+                    <Fade direction='left' key={year.year} delay={700} triggerOnce>
                         <div className="year shadow">
                             <h2>{year.year}</h2>
                             <div className="member">
@@ -38,4 +37,4 @@ const PastMembers = () => {
     )
 }
 
-export default PastMembers
+export default PastMembers;

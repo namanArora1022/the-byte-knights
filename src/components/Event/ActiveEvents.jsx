@@ -4,8 +4,7 @@ import React from 'react';
 import EventsObj from '../../data/events';
 
 // Animation
-import Fade from 'react-reveal/Fade';
-import Bounce from 'react-reveal/Bounce';
+import { Slide , Bounce } from "react-awesome-reveal";
 
 // Components
 import Event from './ActiveEvent';
@@ -16,22 +15,22 @@ const ActiveEvents = () => {
 
     return (
         <div className='active-events events-section'>
-            <Bounce left delay={600}>
+            <Bounce direction='left' delay={600} triggerOnce>
                 <h2>{EventsObj.activeEventsHeading}</h2>
             </Bounce>
             {activeEvents && !activeEvents.length &&
                 <div className="no-event">
-                    <Fade left delay={1000}>
+                    <Slide direction='left' delay={1000} triggerOnce>
                         <h3 className='no-events'>No Events right now 😥</h3>
-                    </Fade>
+                    </Slide>
                 </div>
             }
             {activeEvents &&
                 <div className="events-list">
                     {activeEvents.map(event => (
-                        <Fade left key={event.id} delay={700}>
+                        <Slide direction='left' key={event.id} delay={1000} triggerOnce>
                             <Event event={event} />
-                        </Fade>
+                        </Slide>
                     ))}
                 </div>
             }

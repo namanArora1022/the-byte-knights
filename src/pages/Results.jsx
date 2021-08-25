@@ -7,9 +7,7 @@ import timeSvg from '../assets/time.svg';
 import ResultsObj from '../data/results';
 
 // Animation
-import RubberBand from 'react-reveal/RubberBand';
-import Wobble from 'react-reveal/Wobble';
-import Fade from 'react-reveal/Fade';
+import { AttentionSeeker , Fade } from "react-awesome-reveal";
 
 const Results = () => {
 
@@ -55,22 +53,22 @@ const Results = () => {
         <div className='Results'>
             {result_delcared &&
                 <section className='result'>
-                    <RubberBand>
+                    <AttentionSeeker effect='rubberBand' triggerOnce>
                         <h1>&lt;{ResultsObj.headline} /&gt;</h1>
-                    </RubberBand>
-                    <Wobble>
+                    </AttentionSeeker>
+                    <AttentionSeeker effect='wobble' triggerOnce>
                         <div className="youtube-video">
                             <iframe width="706" height="397" src="https://www.youtube.com/embed/PTu-QFp-9HA" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                         </div>
-                    </Wobble>
+                    </AttentionSeeker>
                 </section>
             }
             {!result_delcared &&
                 <section className='comming-soon'>
-                    <RubberBand>
+                    <AttentionSeeker effect='rubberBand' triggerOnce>
                         <h1>{ResultsObj.commingSoonHeading}</h1>
-                    </RubberBand>
-                    <Wobble>
+                    </AttentionSeeker>
+                    <AttentionSeeker effect='wobble' triggerOnce>
                         <div className="countdown">
                             <div>
                                 <h2>{day}</h2>
@@ -89,8 +87,8 @@ const Results = () => {
                                 <h3>Seconds</h3>
                             </div>
                         </div>
-                    </Wobble>
-                    <Fade up>
+                    </AttentionSeeker>
+                    <Fade direction='up' triggerOnce>
                         <img src={timeSvg} alt="comming soon" />
                     </Fade>
                 </section>

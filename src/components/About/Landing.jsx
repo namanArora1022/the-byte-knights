@@ -1,7 +1,7 @@
 import React from 'react'
 
 // Animation
-import Bounce from 'react-reveal/Bounce';
+import { Bounce } from "react-awesome-reveal";
 
 // Data
 import AboutObj from '../../data/about';
@@ -12,7 +12,7 @@ const Landing = () => {
 
     return (
         <main>
-            <Bounce left cascade delay={200}>
+            <Bounce direction='left' delay={200} cascade triggerOnce>
                 <div className="content">
                     <h1>&lt;{main.headline}/&gt;</h1>
                     <p>{main.para1}</p>

@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Animation
-import Fade from 'react-reveal/Fade';
+import { Fade } from "react-awesome-reveal";
 
 // Data
 import AboutObj from '../../data/about';
@@ -25,7 +25,7 @@ const OurStory = () => {
     const timelineElements = timeline.timelineElements;
 
     return (
-        <Fade up delay={500}>
+        <Fade direction='up' delay={500} triggerOnce>
             <section className="our-story">
                 <h1>{timeline.headline}</h1>
                 <VerticalTimeline>

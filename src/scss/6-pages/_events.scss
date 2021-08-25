@@ -3,7 +3,7 @@
     padding: 40px 70px;
     padding-bottom: 60px;
 
-    >h1 {
+    h1.heading {
         @include underline-heading-border(4px);
         font-size: 3.6rem;
         margin-bottom: 40px;

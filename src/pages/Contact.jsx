@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Animation
-import Fade from 'react-reveal/Fade';
+import { Fade } from 'react-awesome-reveal';
 
 // Images
 import contactSvg from '../assets/contact.svg';
@@ -13,14 +13,14 @@ function Contact() {
     return (
         <div className='Contact'>
             <main>
-                <Fade left>
+                <Fade direction='left' triggerOnce>
                     <div className="left">
                         <h1>{contactObj.headline}</h1>
                         <h4><span>{contactObj.email.p1}</span>{contactObj.email.p2}</h4>
                         <img src={contactSvg} alt="" />
                     </div>
                 </Fade>
-                <Fade up>
+                <Fade direction='up' triggerOnce>
                     <div className="right">
                         {/* fb */}
                         <a href="https://www.facebook.com/profile.php?id=100069116769192" target="_blank" rel="noreferrer">
@@ -45,8 +45,10 @@ function Contact() {
                 <div className="bg-rect"></div>
             </main>
             <section className="maps">
-                <h1>Here we are 🙋🏻‍♂️</h1>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.9513088873964!2d77.09168411508256!3d28.631221382418328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d04bc15555555%3A0xc67001beb4b7d7fa!2sMira%20Model%20School!5e0!3m2!1sen!2sin!4v1629201889498!5m2!1sen!2sin" width="600" height="450" style={{border: 0}} allowFullScreen="" loading="lazy" title="mira model school"></iframe>
+                <Fade direction='up' triggerOnce>
+                    <h1>Here we are 🙋🏻‍♂️</h1>
+                </Fade>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.9513088873964!2d77.09168411508256!3d28.631221382418328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d04bc15555555%3A0xc67001beb4b7d7fa!2sMira%20Model%20School!5e0!3m2!1sen!2sin!4v1629201889498!5m2!1sen!2sin" width="600" height="450" style={{ border: 0 }} allowFullScreen="" loading="lazy" title="mira model school"></iframe>
             </section>
         </div>
     )

@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 import { Link } from 'react-router-dom'
 
 // Animation
-import LightSpeed from 'react-reveal/LightSpeed';
+import { AttentionSeeker } from 'react-awesome-reveal';
 
 // Images
 import logo from '../../assets/logo.png';
@@ -59,12 +59,12 @@ const Landing = () => {
                     <div className="line"></div>
                 </div>
             </header>
-            <LightSpeed left cascade>
+            <AttentionSeeker effect="rubberBand" triggerOnce>
                 <div>
                     <h1 className='heading'>{main.headline1}</h1>
                     <h2 className='heading'>{main.headline2}</h2>
                 </div>
-            </LightSpeed>
+            </AttentionSeeker>
         </main>
     )
 }
